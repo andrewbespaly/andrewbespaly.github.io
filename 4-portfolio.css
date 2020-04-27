@@ -1,0 +1,90 @@
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: rgb(20, 20, 20)
+}
+
+hr{
+    width: 90%;
+    display: block;
+    border-style: outset;
+    border-width: 2px;
+    border-color: rgba(61, 59, 99, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 0 rgba(59, 47, 39, 0.8);
+}
+
+header{
+    text-align: center;
+    color: whitesmoke;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 55px;
+}
+
+h3{
+    font-family: 'Open Sans';
+    font-weight: 100;
+    width: 50%;
+    display: inline-block;
+}
+
+section.projects {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+section.projects p{
+    padding-left: 10%;
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 650;
+    text-align: left;
+}
+
+section.projects ul li a{
+    text-align: center;
+}
+
+section.projects ul li{
+    list-style-type: none;
+}
+
+section.projects ul li a div{
+    text-align: center;
+    margin: 5%;
+}
+
+section.projects ul li a div p {
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(43, 43, 43);
+    width: 85%;
+    text-align: left;
+    font-weight: 400;
+}
+
+section.projects ul li h4{
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+section.projects ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+section.projects ul li a img{
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+}
+
+footer {
+    color: whitesmoke;
+    text-align: right;
+    padding-right: 5%;
+}
