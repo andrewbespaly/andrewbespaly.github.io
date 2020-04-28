@@ -1,0 +1,16 @@
+Portfolio Project Journal
+
+Created a new repo for my portfolio website and renamed the assignment I started on from homework1. When I tried to visit the website it only showed the readme file. I fixed this by naming the files to index.html and index.css.
+
+I'm going to make an outline of the things I want to have on the website so I can complete them as I go.
+
+Outline:
+	I want to implement a bar on top that follows the page down with links that redirect to the different sections on the same page.
+	
+	About me section at the top of the webpage.
+
+	Past Projects section, with pictures, descriptions, and github repo links
+	
+	Contact me section, I want it to actually work and send me an email to my professional email address, but I'm not sure if time will permit. 
+	
+	
