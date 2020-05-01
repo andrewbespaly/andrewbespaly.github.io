@@ -5,91 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Andrew Bespaly Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imgs/andylogo_transparent.png" />
+
   </head>
   <body>
-    <!-- add your code below -->
-    <!-- <p>exercise #4 - getting started with the portfolio</p> -->
-
     <header>
+    <br />
     <h1>Andrew Bespaly</h1>
-    <h3> 
+    <br /> 
+    </header>
+    <hr />
+    <section class="about">
+      
+      <img src=imgs/andrew_about_pic.jpg alt="" class="about_img" />
+      <h3> 
       I'm a senior at Portland State University studying Computer Science, 
       with a passion for efficient algorithms and innovative technology. This website 
       I designed will tell you a little bit more about me.
     </h3>
-    </header>
+    </section>
 
     <hr />
     <section class="projects">
-       <p>A few of the projects I've worked on in the past:</p>
-      <ul>
-        <li class="leftside"> 
-          <a href="#">
-            <br /> 
-            <div>
-              <h4>Project 1</h4> 
-              <img src="http://placekitten.com/500/300" Align="left" alt="project 1 image" />
-              <p>
-                Here is where I would put some text to give a little description 
-                of the project that is on the left side of this text
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil 
-                dolores iure alias error quidem omnis beatae, veniam expedita atque
-                 exercitationem quasi quis quibusdam! Quae unde voluptatem, quia 
-                 quibusdam quo sequi!
-              </p>
+       <p>Projects:</p><br /> <br />
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="item-img col-md-4 d-md-inline-flex">
+                  <img src= imgs/char_recog.png alt="character recognition project image" class="static img-fluid" />
+                  <img src=imgs/char_recog.gif alt="character recognition project gif" class="active img-fluid" />
+              </div>
+              <div class="item-text col-md-6">
+                <h2>Canvas Character Recognition</h2><br />
+                <div>
+                  A program I made that tracks a color of your choosing, lets you draw 
+                  handwritten letters and numbers, computes what characters you drew using
+                  a Machine Learning algorithm and prints them to the screen.
+                </div>
+                <br />
+                <a class="btn-link" href=https://github.com/andrewbespaly/canvas_character_recognition target="_blank">Link to GitHub Repo</a>
+              </div>
             </div>
-          </a> 
-          <br />
-          
-        </li>
-        <li class="rightside">
-          <a href="#"> 
-            <br />
-            <div>
-              <h4>Project 2</h4> 
-              <img src="http://placekitten.com/500/300" Align="right" alt="project 2 image" />
-              <p>
-                Here is where I would put some text to give a little description 
-                of the project that is on the right side of this text
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil 
-                dolores iure alias error quidem omnis beatae, veniam expedita atque
-                 exercitationem quasi quis quibusdam! Quae unde voluptatem, quia 
-                 quibusdam quo sequi!
-              </p>
+            
+
+
+
+            <div class="row">
+              <div class="item-text col-md-4">
+                <h2>Amusement Park using OpenGL</h2><br />
+                <div>
+                  I created an amusement park model using OpenGL in C++. I implemented texture mapping,
+                   paramatric instancing, object sweeping (the track), first and last cart POV.
+                  This project was build off of skeleton code, it was a final project for a Computer Graphics class. 
+                </div>
+                <br />
+                <a class="btn-link" href=https://github.com/andrewbespaly/amusement_park target="_blank">Link to GitHub Repo</a>
+              </div>
+              <div class="item-img col-md-6 d-md-inline-flex">
+                  <img src= imgs/AmusementPark.png alt="amusement park project image" class="static img-fluid" />
+                  <img src=imgs/AmusementPark.gif alt="amusement park project gif" class="active img-fluid" />
+              </div>
+              
             </div>
-          </a> 
-          <br />
-           
-        </li>
-        <li class="leftside">
-          <a href="#">
-            <br />
-            <div>
-              <h4>Project 3</h4> 
-              <img src="http://placekitten.com/500/300" Align="left" alt="project 3 image" />
-              <p>
-                Here is where I would put some text to give a little description 
-                of the project that is on the left side of this text
-              </p>
+
+
+
+            <div class="row">
+              <div class="item-img col-md-4 d-md-inline-flex">
+                  <img src= imgs/subdivmountain.png alt="subdivision project image" class="static img-fluid" />
+                  <img src=imgs/mountainsubdivision.gif alt="subdivision project gif" class="active img-fluid" />
+              </div>
+              <div class="item-text col-md-6">
+                <h2>Subdivision</h2><br />
+                <div>
+                  Subdivision is an algorithm that takes an object made of triangles and creates four new smaller triangles
+                  for every original triangle. Every iteration makes the object become either more smooth or more detailed
+                  depending on the users goal in mind. This was my implemenation of subdivision used to 
+                  create a realistic mountain rendering.
+                </div>
+                <br />
+                <a class="btn-link" href=https://github.com/andrewbespaly/subdivision target="_blank">Link to GitHub Repo</a>
+              </div>
             </div>
-            <br />
-            </a>
-          <br />
-           
-        </li>
-      </ul>
+
     </section>
+
     <hr />
-    <br /><br />
+    <br />
+    
+    <form>
+      <fieldset>
+      <h2>Contact Me</h2>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Another label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+      </fieldset>
+    </form>
+    
+    <br />
     <hr />
     <footer>
-      
+       
       <p>Website created by: Andrew Bespaly</p>
     </footer>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -14,3 +14,14 @@ Outline:
 	Contact me section, I want it to actually work and send me an email to my professional email address, but I'm not sure if time will permit. 
 	
 	
+Had the idea of creating gifs for my repos, I have a couple already for two of my projects, but I'm making a third one right now so at least three of my displayed projects could have a gif when you hover over it.
+
+I've spent the entire day working on the website now. After working on it for a long time and the columns of bootstrap never really working, I realized I added bootstrap into my project incorrectly. I looked up how to do it and did it correctly now, pieces finally started to work correctly for the most part.
+
+I put together the projects section how I wanted it to go. With the project images on the left and descriptionson the right, every other project. Well only three projects, but it still looks good.
+I found a color matching website online, added a salmon color I liked and it gave me some good color options for the rest of the surrounding area.
+I got gifs to display as you hover over the preview image of each project. This took a long time because the image never really fit perfectly over the gif, but it's good enough, especially if it's centered. I added a little hover word on all the pics incase someone for some reason didn't think to hover over the image.
+I added a link button to the github repo for each project, and made it so upon clicking it opens up a new tab (atleast for me it does) instead of taking you there directly.
+I set up 90% of the project, just have to make some adjustments, fill out the rest of the words I need before I'm done.
+Also unsure if I should make a navbar, if time permits, I'll do it last.
+And because I'm not going to have time to implement actually sending me an email through the contact form. I want to make an alert pop up after submitting, that the email functionality is not yet ready and to email me directly.

@@ -32,55 +32,93 @@ h3{
     display: inline-block;
 }
 
-section.projects {
+.about_img {
+    width: 15%;
+    
+    border-radius: 100000px;
+}
+
+/* section.projects {
     box-sizing: border-box;
     padding: 10px;
+} */
+
+.about h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    width: 50%;
+    display: inline-block;
 }
 
 section.projects p{
     padding-left: 10%;
     color: whitesmoke;
-    font-size: 22px;
+    font-size: 40px;
     font-weight: 650;
     text-align: left;
 }
 
-section.projects ul li a{
-    text-align: center;
+.img-fluid {
+    width: 100%;
+    height: 100%;
 }
 
-section.projects ul li{
-    list-style-type: none;
+.static {
+    position: absolute;
 }
 
-section.projects ul li a div{
-    text-align: center;
-    margin: 5%;
+.static:hover {
+    opacity: 0;
 }
 
-section.projects ul li a div p {
-    border-style: solid;
-    border-color: black;
-    background-color: rgb(43, 43, 43);
-    width: 85%;
-    text-align: left;
+.item-img {
+    justify-content: center;
+    margin: 30px;
+}
+
+.item-text {
+    background-color: rgb(252, 219, 206);
+    color: rgb(0, 0, 0);
     font-weight: 400;
+    height: fit-content;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-style: dashed;
+    border-color: #cab5ff;
+    border-width: 5px;
 }
 
-section.projects ul li h4{
-    color: whitesmoke;
-    font-weight: 300;
-}
-
-section.projects ul li a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-section.projects ul li a img{
-    border-width: 4px;
+.row {
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 7rem;
+    background-color: rgb(206, 216, 252);
+    /* background-color: rgb(252, 206, 176); */
     border-style: solid;
-    border-color: black;
+    /* border-color: rgb(206, 246, 252); */
+    border-color: #e3a48c;
+    border-width: 5px;
+}
+
+form {
+    text-align: center;
+}
+fieldset {
+    display: inline-block;
+    background-color: khaki;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
 }
 
 footer {
