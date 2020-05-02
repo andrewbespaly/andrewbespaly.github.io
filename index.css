@@ -17,7 +17,6 @@ hr{
 
 header{
     text-align: center;
-    color: whitesmoke;
 }
 
 h1{
@@ -25,34 +24,46 @@ h1{
     font-size: 55px;
 }
 
-h3{
-    font-family: 'Open Sans';
-    font-weight: 100;
-    width: 50%;
-    display: inline-block;
+.about {
+    text-align: center;
 }
 
 .about_img {
-    width: 15%;
-    
-    border-radius: 100000px;
+    border-radius: 100%;
 }
 
-/* section.projects {
-    box-sizing: border-box;
-    padding: 10px;
-} */
-
 .about h3 {
-    text-align: center;
     color: whitesmoke;
     font-family: 'Open Sans';
     font-weight: 100;
-    width: 50%;
-    display: inline-block;
 }
 
-section.projects p{
+.git-logo {
+    width: 30px;
+}
+
+
+.about a {
+    color: #ebebeb;
+    background-color: #1b1b1b;
+    border: 2px solid #ebebeb;
+    border-radius: 7px;
+    padding: 0.5rem 2rem;
+}
+
+.about a:hover {
+    text-decoration: none;
+    color: #1b1b1b;
+    background-color: #ebebeb;
+    
+}
+
+.about .row {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.headers{
     padding-left: 10%;
     color: whitesmoke;
     font-size: 40px;
@@ -94,31 +105,30 @@ section.projects p{
     border-width: 5px;
 }
 
-.row {
+.projects .row {
     margin-top: 1px;
     margin-right: 1px;
     margin-left: 1px;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     background-color: rgb(206, 216, 252);
-    /* background-color: rgb(252, 206, 176); */
     border-style: solid;
-    /* border-color: rgb(206, 246, 252); */
     border-color: #e3a48c;
     border-width: 5px;
 }
 
-form {
+section.contact {
     text-align: center;
 }
-fieldset {
+form {
     display: inline-block;
     background-color: khaki;
     width: 50%;
-    justify-content: center;
-    align-content: center;
+    padding: 2rem;
+    text-align: left;
+}
+
+#contact-me {
     text-align: center;
-    align-self: center;
-    align-items: center;
 }
 
 footer {

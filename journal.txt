@@ -25,3 +25,12 @@ I added a link button to the github repo for each project, and made it so upon c
 I set up 90% of the project, just have to make some adjustments, fill out the rest of the words I need before I'm done.
 Also unsure if I should make a navbar, if time permits, I'll do it last.
 And because I'm not going to have time to implement actually sending me an email through the contact form. I want to make an alert pop up after submitting, that the email functionality is not yet ready and to email me directly.
+
+I added a jumbotron for my name at the top of the webpage and by default it looks pretty good.
+I added a picture of myself and made the about me section separate from the top of the page. Resizing these to be the right size consistently is the hard part. I struggled to get the picture and text to line up correctly, so I put them in a bootstrap container so they can be responsive automatically.
+Works good.
+
+Messing with the contact me section at the bottom of the page, trying to use bootstraps form-group class to organize it.
+
+Added a github logo inside the link to my github profile, tried to get the color of the image to change as the link is hovered over, but I don't think I'm able to do that since the image is not the entire link area, it would only change if the image itself was hovered over.
+Edited a github logo that works well for a dark background and a light one.
