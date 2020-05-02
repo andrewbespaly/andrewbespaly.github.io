@@ -44,3 +44,10 @@ To do this I found a forum post here: https://stackoverflow.com/questions/300506
 Going to add my email in the about section so people will be able to get a hold of me.
 I added my email, but wanted to implement a copy to clipboard button. After looking at three tutorials online where the element they were copying from was a textarea or input with type text, I found one that explained it to me. The element needs to be textarea or input so you can call selet() on it. The solution was to copy the information from the <p> element I was using and create a textarea that wasn't going to be seen. It finally works.
 Here's the tutorial: https://inspiredwebdev.com/copy-to-clipboard-with-javascript
+I think I'm done now, had a fun time making this as soon as I started to understand the grid system in bootstrap better. (mostly after I learned how to correctly import it into my html file)
+I don't know if I would do anything differently in terms of how it looks, I think it's really nice.
+The biggest thing that made it feel different, was putting in that background color gradient, and the background image behind the contact me form. As soon as those loaded up it felt like a completely different webpage.
+
+Link to public repo: https://github.com/andrewbespaly/andrewbespaly.github.io
+
+Link to deployed website: andrewbespaly.github.io
