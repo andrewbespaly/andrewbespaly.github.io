@@ -34,3 +34,13 @@ Messing with the contact me section at the bottom of the page, trying to use boo
 
 Added a github logo inside the link to my github profile, tried to get the color of the image to change as the link is hovered over, but I don't think I'm able to do that since the image is not the entire link area, it would only change if the image itself was hovered over.
 Edited a github logo that works well for a dark background and a light one.
+
+I was looking for how to make an image a background, and I ran across the linear-gradient function, and it made my page come alive. I also got the background image to work for the contact me section. 
+I applied box-shadows to the projects rows that I designed earlier. Made some transparency and it looks really good.
+It's so cool to see this page come together.
+
+I implemented a little alert message when you try to send something in the contact me form. Just in case I use this site, and an employer wants to try and use it, they won't actually think a message sent to my email.
+To do this I found a forum post here: https://stackoverflow.com/questions/30050678/show-bootstrap-alert-box-on-a-button-click and a jsfiddle code snippet here: http://jsfiddle.net/g1rnnr8r/2/
+Going to add my email in the about section so people will be able to get a hold of me.
+I added my email, but wanted to implement a copy to clipboard button. After looking at three tutorials online where the element they were copying from was a textarea or input with type text, I found one that explained it to me. The element needs to be textarea or input so you can call selet() on it. The solution was to copy the information from the <p> element I was using and create a textarea that wasn't going to be seen. It finally works.
+Here's the tutorial: https://inspiredwebdev.com/copy-to-clipboard-with-javascript

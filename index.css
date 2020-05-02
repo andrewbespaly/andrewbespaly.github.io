@@ -2,7 +2,9 @@
 body {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    background-color: rgb(20, 20, 20)
+    /* background-color: rgb(20, 20, 20) */
+    /* background-image: linear-gradient(rgb(255, 88, 88), rgb(45, 171, 255)); */
+    background-image: linear-gradient(rgb(253, 179, 19), rgb(248, 148, 148),rgb(13, 13, 20),rgb(13, 13, 20));
 }
 
 hr{
@@ -24,6 +26,10 @@ h1{
     font-size: 55px;
 }
 
+.jumbotron {
+    background-color: whitesmoke;
+}
+
 .about {
     text-align: center;
 }
@@ -42,6 +48,23 @@ h1{
     width: 30px;
 }
 
+.email-text {
+    font-weight: 400;
+    background-color: rgb(255, 191, 172);
+    padding: 0.7rem 2rem;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: black;
+}
+
+.email-button {
+    margin-left: 2rem;
+    background-color: inherit;
+}
+
+.clip_img {
+    width: 27px;
+}
 
 .about a {
     color: #ebebeb;
@@ -65,10 +88,12 @@ h1{
 
 .headers{
     padding-left: 10%;
-    color: whitesmoke;
+    color: rgb(255, 246, 232);
     font-size: 40px;
     font-weight: 650;
     text-align: left;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 0 rgb(75, 75, 75);
 }
 
 .img-fluid {
@@ -107,28 +132,56 @@ h1{
 
 .projects .row {
     margin-top: 1px;
-    margin-right: 1px;
-    margin-left: 1px;
+    margin-right: 2rem;
+    margin-left: 2rem;
     margin-bottom: 5rem;
     background-color: rgb(206, 216, 252);
     border-style: solid;
     border-color: #e3a48c;
     border-width: 5px;
+    box-shadow: 25px 15px rgba(0, 0, 0, 0.267);
 }
 
 section.contact {
     text-align: center;
-}
-form {
-    display: inline-block;
-    background-color: khaki;
-    width: 50%;
-    padding: 2rem;
-    text-align: left;
+    background-image: url("imgs/code_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
-#contact-me {
+.form-group {
+    margin-bottom: 2rem;
+}
+
+
+#contact-me, #send{
     text-align: center;
+    text-align: center;
+}
+
+label {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+form {
+    display: inline-block;
+    background-color: #d9fffd;
+    min-width: 30%;
+    max-width: 80%;
+    padding: 2rem;
+    text-align: left;
+    border: 5px solid #89d1cd;
+    border-radius: 10px;
+}
+
+.alert {
+    display: none;
+    background-color: rgb(255, 156, 138);
+    color: black;
+    border: 2px solid rgb(250, 89, 89);
 }
 
 footer {
