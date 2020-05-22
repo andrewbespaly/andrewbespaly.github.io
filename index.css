@@ -2,9 +2,7 @@
 body {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    /* background-color: rgb(20, 20, 20) */
-    /* background-image: linear-gradient(rgb(255, 88, 88), rgb(45, 171, 255)); */
-    background-image: linear-gradient(rgb(253, 179, 19), rgb(248, 148, 148),rgb(13, 13, 20),rgb(13, 13, 20));
+    background-image: linear-gradient(rgb(70, 70, 70),rgb(105, 73, 73), rgb(73, 32, 32), rgb(13, 13, 20),rgb(13, 13, 20));
 }
 
 hr{
@@ -50,15 +48,13 @@ h1{
 
 .email-text {
     font-weight: 400;
-    background-color: rgb(255, 191, 172);
-    padding: 0.7rem 2rem;
-    border: 3px solid black;
+    padding: 0.7rem 0.5rem;
     border-radius: 2px;
-    color: black;
+    color: rgb(245, 245, 245);
 }
 
 .email-button {
-    margin-left: 2rem;
+    margin-left: 1rem;
     background-color: inherit;
 }
 
@@ -115,7 +111,7 @@ h1{
 }
 
 .item-text {
-    background-color: rgb(252, 219, 206);
+    background-color: rgb(235, 233, 233);
     color: rgb(0, 0, 0);
     font-weight: 400;
     height: fit-content;
@@ -126,7 +122,7 @@ h1{
     margin-right: 2rem;
     margin-bottom: 2rem;
     border-style: dashed;
-    border-color: #cab5ff;
+    border-color: #6b3d23;
     border-width: 5px;
 }
 
@@ -135,9 +131,9 @@ h1{
     margin-right: 2rem;
     margin-left: 2rem;
     margin-bottom: 5rem;
-    background-color: rgb(206, 216, 252);
+    background-color: rgb(206, 194, 189);
     border-style: solid;
-    border-color: #e3a48c;
+    border-color: #582c1b;
     border-width: 5px;
     box-shadow: 25px 15px rgba(0, 0, 0, 0.267);
 }
