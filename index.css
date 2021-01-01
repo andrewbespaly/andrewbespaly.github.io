@@ -1,6 +1,5 @@
 
 body {
-    /* font-family: 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -21,15 +20,9 @@ header{
     text-align: center;
 }
 
-h1{
-    /* font-family: 'Kaushan Script', cursive; */
+header h1{
     font-family: 'Lobster', cursive;
-    font-size: 80px;
-}
-
-.jumbotron {
     background-color: whitesmoke;
-    width: 55%;
 }
 
 .about {
@@ -42,10 +35,7 @@ h1{
 
 .about h3 {
     color: whitesmoke;
-    /* font-family: 'Raleway', sans-serif; */
     font-weight: 300;
-    /* font-family: 'Open Sans'; */
-    /* font-weight: 100; */
 }
 
 .git-logo {
@@ -90,14 +80,10 @@ h1{
 
 .headers{
     padding-left: 10%;
-    /* color: rgb(255, 246, 232); */
     color: whitesmoke;
     font-family: 'Lobster', cursive;
     font-size: 50px;
-    /* font-weight: 650; */
     text-align: left;
-    /* -webkit-text-stroke: 1px black; */
-    /* text-shadow: 2px 2px 0 rgb(75, 75, 75); */
 }
 
 .item-text h2 {
@@ -129,12 +115,6 @@ h1{
     color: rgb(0, 0, 0);
     font-weight: 400;
     height: fit-content;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 4rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
     border-style: dashed;
     border-color: #6b3d23;
     border-width: 5px;
@@ -142,14 +122,11 @@ h1{
 
 .projects .row {
     margin-top: 1px;
-    margin-right: 4rem;
-    margin-left: 4rem;
     margin-bottom: 5rem;
     background-color: rgb(206, 194, 189);
     border-style: solid;
     border-color: #582c1b;
     border-width: 5px;
-    box-shadow: 25px 15px rgba(0, 0, 0, 0.267);
 
 }
 
