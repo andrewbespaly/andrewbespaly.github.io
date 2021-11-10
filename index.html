@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="imgs/andylogo_transparent.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:ital,wght@0,300;0,400;0,600;1,600&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:ital,wght@1,100;0,300;0,400;0,600;1,600&display=swap" rel="stylesheet"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">  </head>
   <body>
     <header>
     <br />
@@ -30,7 +32,7 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <img src=imgs/profpic.jpg alt="" class="img-fluid col-sm-3 about_img" />
+          <img src=imgs/profpic2.jpg alt="" class="img-fluid col-sm-3 about_img" />
         </div>
         <div class="row d-flex justify-content-center">
           <h3 class="col-sm-5 d-sm-inline-block ">
@@ -58,6 +60,34 @@
     <hr />
     <section class="projects">
        <p class="headers">Projects</p><br /> <br />
+
+
+        <div data-aos="fade-left"
+        data-aos-duration="2000">
+          <div class="row mx-1 mx-sm-4">
+            <div class="item-img col-10 col-sm-4 order-1 order-sm-2 d-inline-flex mx-auto">
+                
+                <video controls muted class="active img-fluid portrait">
+                  <source src="imgs/soakpreview.mp4" type="video/mp4" >
+                  Your browser does not support HTML video
+                </video>
+            </div>
+            <div class="item-text col-10 col-sm-6 py-1 mx-auto mb-5 my-sm-auto mt-3 order-2 order-sm-1 ">
+              <h2>Soak: Sleep & Wakeup to Videos</h2><br />
+              <div>
+                Use YouTube videos as a sleep timer and an alarm clock with Soak, 
+                a project I created over the summer using JavaScript, React-Native, 
+                Google Cloud Platform for API usage, and Firebase for database, cloud functions, 
+                and cloud messaging services.
+              </div>
+              <br />
+              <a class="btn-link" href=https://apps.apple.com/app/id1572946421 target="_blank">View in App Store</a>
+            </div>
+            
+          </div>
+        </div>
+
+
 
           <div class="container-fluid">
             <div data-aos="fade-right"
@@ -157,7 +187,7 @@
                   <h2>Amusement Park using OpenGL</h2><br />
                   <div>
                     I created an amusement park model using OpenGL in C++. I implemented texture mapping,
-                    paramatric instancing, object sweeping (the track), first and last cart POV.
+                    paramatric instancing, object sweeping, first and last cart POV.
                     This project was build off of skeleton code, it was a final project for a Computer Graphics class. 
                   </div>
                   <br />

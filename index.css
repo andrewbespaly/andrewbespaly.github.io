@@ -20,8 +20,10 @@ header{
     text-align: center;
 }
 
-header h1{
-    font-family: 'Lobster', cursive;
+.jumbotron{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 300;
     background-color: whitesmoke;
 }
 
@@ -81,19 +83,26 @@ header h1{
 .headers{
     padding-left: 10%;
     color: whitesmoke;
-    font-family: 'Lobster', cursive;
+    font-family: 'Raleway', sans-serif;
+    /* font-style: italic; */
+    font-weight: 100;
+
     font-size: 50px;
     text-align: left;
 }
 
 .item-text h2 {
     font-style: italic;
-    font-weight:600;
+    font-weight:300;
 }
 
 .img-fluid {
     width: 100%;
     height: 100%;
+}
+
+.portrait {
+    width: 50%;
 }
 
 .static {
@@ -115,9 +124,7 @@ header h1{
     color: rgb(0, 0, 0);
     font-weight: 400;
     height: fit-content;
-    border-style: dashed;
-    border-color: #6b3d23;
-    border-width: 5px;
+   
 }
 
 .projects .row {
