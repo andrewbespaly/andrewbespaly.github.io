@@ -39,3 +39,20 @@ const allVideos = document.querySelectorAll(".active");
 allVideos.forEach((video)=>{
     observer.observe(video);
 })
+
+function mockupDisappear() {
+  const mockupElement = document.getElementById("mockup");
+  // mockupElement.style.width = 0;
+  // mockupElement.style.height = 0;
+  // mockupElement.style.top = 50;
+
+  mockupElement.style.opacity = 0;
+}
+
+function disappearTimer() {
+  setTimeout(()=>{
+    mockupDisappear()
+  }, 1500);
+}
+
+disappearTimer()
