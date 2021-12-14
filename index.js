@@ -56,3 +56,5 @@ function disappearTimer() {
 }
 
 disappearTimer()
+
+// document.addEventListener("visibilitychange", onchange)

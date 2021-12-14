@@ -5,18 +5,141 @@ body {
     font-size: 20px;
     background-color: #3d5a80;
     /* background-image: linear-gradient(rgb(70, 70, 70),rgb(105, 73, 73), rgb(73, 32, 32), rgb(13, 13, 20),rgb(13, 13, 20)); */
+    display: flex;
+    flex-direction: column;
 }
 
 #mockup {
+/* to delete later */
+    visibility: hidden; 
+/* to delete later */
+
+
     position: absolute;
     min-height: 100vh;
     z-index: 1;
-    
+
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -ms-transition: all 2s ease;
     -o-transition: all 2s ease;
     transition: all 2s ease;
+}
+
+.sidebar {
+    flex: 1;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 60px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(172, 87, 108);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* align-content: flex-start; */
+
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover a p {
+    opacity: 1;
+    /* display: initial; */
+    width: 105px;
+    /* display: flex; */
+    /* flex: 1; */
+}
+
+.sidebar > div {
+    flex: 9;
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.sidebar div p {
+    transform: rotate(90deg);
+    white-space: nowrap;
+    flex: 1;
+    height: fit-content;
+    width: fit-content;
+    font-size: 35px;
+    color: #222222;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    white-space: nowrap;
+    color: #3f3f3f;
+    display: flex;
+    flex: 1;
+    /* height: fit-content;
+    width: fit-content; */
+    width:fit-content;
+    border: solid yellow 2px;
+
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+
+}
+
+.sidebar a img {
+    border: solid purple 2px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+
+}
+
+.sidebar a p {
+    /* display: none; */
+    width: 0px;
+    /* flex: 0; */
+
+    border: solid orange 2px;
+    /* display: inline-block; */
+
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 hr{
