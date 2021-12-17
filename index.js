@@ -47,6 +47,7 @@ function mockupDisappear() {
   // mockupElement.style.top = 50;
 
   mockupElement.style.opacity = 0;
+  mockupElement.style.zIndex = 0;
 }
 
 function disappearTimer() {

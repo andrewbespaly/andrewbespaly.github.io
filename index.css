@@ -11,13 +11,13 @@ body {
 
 #mockup {
 /* to delete later */
-    visibility: hidden; 
+    /* visibility: hidden;  */
 /* to delete later */
 
 
     position: absolute;
     min-height: 100vh;
-    z-index: 1;
+    z-index: 2;
 
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
