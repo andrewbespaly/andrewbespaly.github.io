@@ -30,48 +30,86 @@
 
     </div>
 
-    <!-- <div id="main"> -->
+    <div id="main">
     <header>
     <br />
-    <div class="d-flex justify-content-center">
+    <!-- <div class="d-flex justify-content-center">
       <h1 class="jumbotron display-3 w-75 ">Andrew Bespaly</h1>
-    </div>
+    </div> -->
     <br /> 
     </header>
-    <hr />
+    <!-- <hr /> -->
     <section class="about">
       
-      <div class="container-fluid">
-        <div class="row d-flex justify-content-left">
-          <div class="headers col-sm-3">
-            About Me
+      <div class="container-fluid d-flex p-2 flex-row">
+
+        <!-- left of about me section flex table -->
+        <div class="flex-column p-2 d-flex">
+          <!-- MY Name -->
+          <div class="d-flex p-2 justify-content-center">
+            <div class="jumbotron display-3 w-75 d-flex flex-column">
+              <p class="d-flex ">Andrew</p>
+              <!-- <br> </br> -->
+              <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bespaly</p> -->
+              <p class="d-flex ">Bespaly</p>
+
+            </div>
+          </div>
+
+          <!-- My job title -->
+          <div class="row d-flex justify-content-center">
+            <div id="jobTitle" class="col-5">
+              Software Engineer
+            </div>
+          </div>
+
+          <!-- About Text -->
+          <div class="row d-flex justify-content-center">
+            <h3 class="col-9 d-sm-inline-block ">
+              I take great pleasure in completing projects from start to finish.
+              I'm a Portland State University alumnus, with a Bachelor's of Science in 
+              Computer Science. 
+              I have a passion for efficient algorithms and innovative technology.
+              I love pushing myself to learn new skills and take on new challenges.
+
+            </h3>
           </div>
         </div>
-        <div class="row d-flex justify-content-center">
-          <img src=imgs/profpic2.jpg alt="" class="img-fluid col-sm-3 about_img" />
+
+
+        <!-- Picture of Myself / right of about me section flex table-->
+        <div class="flex-column p-2 d-flex">
+
+        <div class=" d-flex p-2 flex">sdf</div>
+        <div class="d-flex justify-content-center p-2">
+          <img src=imgs/profpic2.jpg alt="" class="img-fluid about_img" />
         </div>
-        <div class="row d-flex justify-content-center">
-          <h3 class="col-sm-5 d-sm-inline-block ">
-            I'm a Portland State University alumnus, with a Bachelor's of Science in 
-            Computer Science. 
-            I have a passion for efficient algorithms and innovative technology.
-            I love pushing myself to learn new skills and take on new challenges.
-          </h3>
-        </div>
+        <div class=" d-flex p-2">asd</div>
+
+        
+
+        
+      </div>
+
+      
+
+    </section>
+
+    <div class="flex-column">
         <div class="row d-sm-inline-flex justify-content-center">
           <a href=https://github.com/andrewbespaly class="font-weight-bold" target="_blank">
               <img src=imgs/github-logo.png class="git-logo" alt="" />
-            My GitHub</a>
+            My GitHub
+          </a>
         </div>
         <br />
         <div class="row d-sm-inline-flex justify-content-center email-text">
           <a id="real_email" href="mailto:andrew.bespaly@gmail.com">andrew.bespaly@gmail.com</a>
-          <!-- <button onclick="copyEmail()" class="email-button">
+          <button onclick="copyEmail()" class="email-button">
             <img src=imgs/clip.png alt="" class="clip_img" />
-          </button> -->
+          </button>
         </div>
       </div>
-    </section>
 
     <hr />
     <section class="projects">
@@ -259,6 +297,6 @@
       AOS.init();
     </script>
     <script src="index.js"></script>
-  <!-- </div> -->
+  </div>
   </body>
 </html>

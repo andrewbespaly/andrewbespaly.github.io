@@ -7,11 +7,19 @@ body {
     /* background-image: linear-gradient(rgb(70, 70, 70),rgb(105, 73, 73), rgb(73, 32, 32), rgb(13, 13, 20),rgb(13, 13, 20)); */
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#main {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #mockup {
 /* to delete later */
-    /* visibility: hidden;  */
+    visibility: hidden; 
 /* to delete later */
 
 
@@ -29,7 +37,7 @@ body {
 .sidebar {
     flex: 1;
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 60px; /* Set the width of the sidebar */
+    width: 4%; /* (was60px) Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1;
     top: 0; /* Stay at the top */
@@ -57,7 +65,7 @@ body {
 }
 
 .sidebar:hover {
-    width: 200px;
+     width: 12%; /*was 200px */
 }
 
 .sidebar:hover a p {
@@ -162,19 +170,39 @@ header{
     font-weight: 300;
     background-color: #ee6c4d;
     color: #e0fbfc;
+    /* padding-right: 22%; */
+
+}
+
+.jumbotron p:last-of-type  {
+    justify-content: flex-end;
+    background-color: lavender;
+
 }
 
 .about {
     text-align: center;
 }
 
+#jobTitle {
+    background-color: red;
+}
+
 .about_img {
     border-radius: 100%;
+    /* max-width: 75%;
+    max-height: 75%; */
+
+    /* max-width: 100%;
+    height: auto;
+    display: flex; */
+    
 }
 
 .about h3 {
     color: whitesmoke;
     font-weight: 300;
+    background-color: blue;
 }
 
 .git-logo {
