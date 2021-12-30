@@ -18,10 +18,6 @@ body {
 }
 
 #mockup {
-/* to delete later */
-    visibility: hidden; 
-/* to delete later */
-
 
     position: absolute;
     min-height: 100vh;
@@ -164,21 +160,42 @@ header{
     text-align: center;
 }
 
+.about {
+    text-align: center;
+    height: 100vh;
+    /* background-color: turquoise; */
+    display: flex;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.left-side-about {
+    /* background-color: khaki; */
+    justify-content: space-around;
+    height: 90vh;
+    
+}
+
+.right-side-about {
+    /* background-color: tomato; */
+    justify-content: center;
+    height: 90vh;
+}
+
 .jumbotron{
     font-family: 'Raleway', sans-serif;
     font-style: italic;
     font-weight: 300;
     background-color: #ee6c4d;
     color: #e0fbfc;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    /* margin-top: 15px; */
+    /* margin-bottom: 15px; */
     padding-top: 0px;
     padding-bottom: 0px;
     
 }
 
 .jumbotron p {
-    /* background-color: magenta; */
     margin: 0px;
 }
 
@@ -188,37 +205,37 @@ header{
 
 }
 
-.about {
-    text-align: center;
-    /* height: 300px; */
-    background-color: pink;
-    margin-top: 20px;
-}
+
 
 #jobTitle {
-    background-color: red;
-    margin: 0px 0px 20px 0px;
+    /* background-color: red; */
+    /* margin: 0px 0px 20px 0px; */
+    
 }
 
 .about_img {
     border-radius: 100%;
-    /* max-width: 75%;
-    max-height: 75%; */
+    /* background-color: rgb(172, 87, 108); */
+    background-image: linear-gradient(rgb(172, 87, 108),rgb(70, 42, 42));
 
-    /* max-width: 100%;
-    height: auto;
-    display: flex; */
+    max-width: 60%;
     
+}
+
+.right-img-about {
+    max-width: 80vh;
+}
+
+.when-small-screen-img {
+    display: none !important;
 }
 
 .about h3 {
     color: whitesmoke;
     font-weight: 200;
-    background-color: blue;
+    /* background-color: blue; */
     font-size: 100%;
     line-height: 1.5;
-    /* width: 100%; */
-    margin-left: 0px;
     
 }
 
@@ -364,51 +381,81 @@ footer {
 
 
 /* X-Small devices (everything under 576px) */
-@media (max-width: 576px) {
+@media screen and (max-width: 575px) {
     .jumbotron {
-        font-size: 80%;
-        background-color: red;
+        font-size: 200%;
+        /* background-color: red; */
     }
     #jobTitle {
-        font-size: 50%;
+        font-size: 115%;
     }
     .about h3 {
-        font-size: 40%;
+        font-size: 90%;
     }
+    .when-small-screen-img {
+        display: initial !important;
+    }
+    .right-side-about {
+        display: none !important;
+    }
+    .about_img {
+        max-width: 60%;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     .jumbotron {
-        font-size: 100%;
-        background-color: purple;
+        font-size: 250%;
+        /* background-color: purple; */
     }
     #jobTitle {
-        font-size: 62%;
+        font-size: 125%;
     }
     .about h3 {
-        font-size: 55%;
+        font-size: 100%;
     }
+    .when-small-screen-img {
+        display: initial !important;
+    }
+    .right-side-about {
+        display: none !important;
+    }
+    .about_img {
+        max-width: 45%;
+    }
+   
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .jumbotron {
-        background-color: lime;
-        font-size: 180%;
+        /* background-color: lime; */
+        font-size: 250%;
     }
     #jobTitle {
-        font-size: 85%;
+        font-size: 130%;
     }
     .about h3 {
-        font-size: 75%;
+        font-size: 100%;
     }
+    .when-small-screen-img {
+        display: initial !important;
+    }
+    .right-side-about {
+        display: none !important;
+    }
+    .about_img {
+        max-width: 30%;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .jumbotron {
-        background-color: gray;
+        /* background-color: gray; */
         font-size: 250%;
     }
     #jobTitle {
@@ -417,12 +464,15 @@ footer {
     .about h3 {
         font-size: 90%;
     }
+    .about_img {
+        max-width: 70%;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
     .jumbotron {
-        background-color: teal;
+        /* background-color: teal; */
         font-size: 330%;
     }
     #jobTitle {
@@ -431,15 +481,24 @@ footer {
     .about h3 {
         font-size: 100%;
     }
+    .about_img {
+        max-width: 70%;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     .jumbotron {
-        background-color: cyan;
+        /* background-color: cyan; */
         font-size: 400%;
     }
     #jobTitle {
         font-size: 140%;
+    }
+    .about h3 {
+        font-size: 120%;
+    }
+    .about_img {
+        max-width: 60%;
     }
 }
