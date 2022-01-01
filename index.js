@@ -17,6 +17,20 @@ function copyEmail() {
     document.body.removeChild(el);
 }
 
+function openAndCloseSidebar() {
+  let sidebar = document.getElementById("sidebar");
+  if(sidebar.style.width === "0%"){
+    sidebar.style.width = "15%"
+    // document.getElementById("main").style.marginLeft = "25%";
+  }
+  else {
+    sidebar.style.width = "0%";
+    // document.getElementById("main").style.marginLeft = "0%";
+
+  }
+
+}
+
 
 let options = {
     root: null,

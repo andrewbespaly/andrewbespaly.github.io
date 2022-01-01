@@ -21,7 +21,7 @@
 
 <body>
     <!-- <img id="mockup" src=imgs/portfolioPageSketch.png alt=mockup width=100%  /> -->
-    <div class="sidebar">
+    <div id="sidebar" class="sidebar">
       <div><p>Andrew Bespaly</p></div>
       <a href="#"> 
         <img src=imgs/portfolioPageSketch.png  />
@@ -35,6 +35,10 @@
 
     </div>
 
+    <div class="sidebar-arrow">
+      <div class="arrow" onclick="openAndCloseSidebar()">></div>
+    </div>
+
     <div id="main">
     <section class="about">
       
@@ -45,8 +49,8 @@
           <!-- MY Name -->
           <div class="d-flex justify-content-center">
             <div class="jumbotron d-flex flex-column w-75 ">
-              <p class="d-flex andrew">Andrew</p>
-              <p class="d-flex bespaly">Bespaly</p>
+              <p class="d-flex ">Andrew</p>
+              <p class="d-flex ">Bespaly</p>
             </div>
           </div>
 
@@ -55,26 +59,26 @@
           </div>
 
           <!-- My job title -->
-
-          
-
           <div id="jobTitle" class="d-flex justify-content-center ">
             Software Engineer
           </div>
-            
 
           <!-- About Text -->
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center about-me-text">
             <h3 class="col-12 d-inline-block ">
-            
+              <p class='rtp'>
               I take great pleasure in completing projects from start to finish.
-              <br/>
-              I'm a Portland State University alumnus, with a Bachelor's of Science in 
+              </p>
+              <!-- <br/> -->
+              <p>I'm a Portland State University alumnus, with a Bachelor's of Science in 
               Computer Science. 
-              <br/>
+              </p>
+              <!-- <br/> -->
+              <p>
               I have a passion for efficient algorithms and innovative technology.
               I love pushing myself to learn new skills and take on new challenges.
-              <br/>
+              </p>
+              <!-- <br/> -->
             </h3>
           </div>
         </div>
@@ -88,28 +92,11 @@
           </div>
         </div>
 
-        
       </div>
-
-      
 
     </section>
 
-    <div class="flex-column">
-        <div class="row d-sm-inline-flex justify-content-center">
-          <a href=https://github.com/andrewbespaly class="font-weight-bold" target="_blank">
-              <img src=imgs/github-logo.png class="git-logo" alt="" />
-            My GitHub
-          </a>
-        </div>
-        <br />
-        <div class="row d-sm-inline-flex justify-content-center email-text">
-          <a id="real_email" href="mailto:andrew.bespaly@gmail.com">andrew.bespaly@gmail.com</a>
-          <button onclick="copyEmail()" class="email-button">
-            <img src=imgs/clip.png alt="" class="clip_img" />
-          </button>
-        </div>
-      </div>
+
 
     <hr />
     <section class="projects">
@@ -251,6 +238,22 @@
             </div>
 
     </section>
+
+    <div class="flex-column">
+      <div class="row d-sm-inline-flex justify-content-center">
+        <a href=https://github.com/andrewbespaly class="font-weight-bold" target="_blank">
+            <img src=imgs/github-logo.png class="git-logo" alt="" />
+          My GitHub
+        </a>
+      </div>
+      <br />
+      <div class="row d-sm-inline-flex justify-content-center email-text">
+        <a id="real_email" href="mailto:andrew.bespaly@gmail.com">andrew.bespaly@gmail.com</a>
+        <button onclick="copyEmail()" class="email-button">
+          <img src=imgs/clip.png alt="" class="clip_img" />
+        </button>
+      </div>
+    </div>
 
     <footer>
        
