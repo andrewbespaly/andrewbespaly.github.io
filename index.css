@@ -183,6 +183,7 @@ header {
 .about {
   text-align: center;
   height: 100vh;
+  min-height: 800px;
   /* background-color: turquoise; */
   display: flex;
   align-items: center;
