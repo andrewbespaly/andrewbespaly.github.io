@@ -21,22 +21,32 @@
 
 <body>
     <!-- <img id="mockup" src=imgs/portfolioPageSketch.png alt=mockup width=100%  /> -->
-    <div id="sidebar" class="sidebar">
-      <div><p>Andrew Bespaly</p></div>
-      <a href="#"> 
-        <img src=imgs/portfolioPageSketch.png  />
-        <p>LinkedIn</p>
-      </a>
-      <a href="#"> 
-        <img src=imgs/github-logo.png width=100 />
-        <p>Github</p>
-      </a>
-      <a href="#">Email</a>
+    <div id="sidebar" class="sidebar d-flex flex-row">
+      <div class="left-info d-flex flex-column">
+        <div class="name "><p>Andrew Bespaly</p></div>
 
+        <!-- LinkedIn -->
+        <a class="" href="https://www.linkedin.com/in/andrew-bespaly-9b71b81b9/"> 
+          <img alt="linkedIn_img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTQxLDRIOUM2LjI0LDQsNCw2LjI0LDQsOXYzMmMwLDIuNzYsMi4yNCw1LDUsNWgzMmMyLjc2LDAsNS0yLjI0LDUtNVY5QzQ2LDYuMjQsNDMuNzYsNCw0MSw0eiBNMTcsMjB2MTloLTZWMjBIMTd6IE0xMSwxNC40N2MwLTEuNCwxLjItMi40NywzLTIuNDdzMi45MywxLjA3LDMsMi40N2MwLDEuNC0xLjEyLDIuNTMtMywyLjUzQzEyLjIsMTcsMTEsMTUuODcsMTEsMTQuNDd6IE0zOSwzOWgtNmMwLDAsMC05LjI2LDAtMTAgYzAtMi0xLTQtMy41LTQuMDRoLTAuMDhDMjcsMjQuOTYsMjYsMjcuMDIsMjYsMjljMCwwLjkxLDAsMTAsMCwxMGgtNlYyMGg2djIuNTZjMCwwLDEuOTMtMi41Niw1LjgxLTIuNTYgYzMuOTcsMCw3LjE5LDIuNzMsNy4xOSw4LjI2VjM5eiI+PC9wYXRoPjwvc3ZnPg=="/>
+        </a>
+        <!-- Github -->
+        <a class="" href="https://github.com/andrewbespaly"> 
+          <img alt="github_logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjAiIGhlaWdodD0iNjAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTE1LDNDOC4zNzMsMywzLDguMzczLDMsMTVjMCw1LjYyMywzLjg3MiwxMC4zMjgsOS4wOTIsMTEuNjNDMTIuMDM2LDI2LjQ2OCwxMiwyNi4yOCwxMiwyNi4wNDd2LTIuMDUxIGMtMC40ODcsMC0xLjMwMywwLTEuNTA4LDBjLTAuODIxLDAtMS41NTEtMC4zNTMtMS45MDUtMS4wMDljLTAuMzkzLTAuNzI5LTAuNDYxLTEuODQ0LTEuNDM1LTIuNTI2IGMtMC4yODktMC4yMjctMC4wNjktMC40ODYsMC4yNjQtMC40NTFjMC42MTUsMC4xNzQsMS4xMjUsMC41OTYsMS42MDUsMS4yMjJjMC40NzgsMC42MjcsMC43MDMsMC43NjksMS41OTYsMC43NjkgYzAuNDMzLDAsMS4wODEtMC4wMjUsMS42OTEtMC4xMjFjMC4zMjgtMC44MzMsMC44OTUtMS42LDEuNTg4LTEuOTYyYy0zLjk5Ni0wLjQxMS01LjkwMy0yLjM5OS01LjkwMy01LjA5OCBjMC0xLjE2MiwwLjQ5NS0yLjI4NiwxLjMzNi0zLjIzM0M5LjA1MywxMC42NDcsOC43MDYsOC43Myw5LjQzNSw4YzEuNzk4LDAsMi44ODUsMS4xNjYsMy4xNDYsMS40ODFDMTMuNDc3LDkuMTc0LDE0LjQ2MSw5LDE1LjQ5NSw5IGMxLjAzNiwwLDIuMDI0LDAuMTc0LDIuOTIyLDAuNDgzQzE4LjY3NSw5LjE3LDE5Ljc2Myw4LDIxLjU2NSw4YzAuNzMyLDAuNzMxLDAuMzgxLDIuNjU2LDAuMTAyLDMuNTk0IGMwLjgzNiwwLjk0NSwxLjMyOCwyLjA2NiwxLjMyOCwzLjIyNmMwLDIuNjk3LTEuOTA0LDQuNjg0LTUuODk0LDUuMDk3QzE4LjE5OSwyMC40OSwxOSwyMi4xLDE5LDIzLjMxM3YyLjczNCBjMCwwLjEwNC0wLjAyMywwLjE3OS0wLjAzNSwwLjI2OEMyMy42NDEsMjQuNjc2LDI3LDIwLjIzNiwyNywxNUMyNyw4LjM3MywyMS42MjcsMywxNSwzeiI+PC9wYXRoPjwvc3ZnPg=="/>
+         
+        </a>
+        <!-- Email -->
+        <a class="" href="mailto:andrew.bespaly@gmail.com">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADrElEQVR4nO3aWYgdRRQG4M8kbhM1kqhxgRgXUHFBUFERRUQEtxcFMfgiCoIRwfgSX10QBQlKjCioCBIUFEHEPS5EBGM0RCEoYkZMJDpGJi6Dccu0D1XDbWfm3unu2z231frhMHOrq06d/7/Vp07XbRISEhISEhISEhISEhL+f9irS/vhWIODZjGWJvEzlmOkSOcT4t8zsRPZv9x2Ri55bj2xDjfE/0/E9haQqGo7cGrkch3eLCLAOxjH7fHz0fiiBWTK2jCOixxuwZ7IrZAAE07ui22LsbkFpIraFhwZY1+Zay8tQIaHMQcH4/0WkJvJPsQiIcE/MOlaJQEyPI15mI/XWkCym72NAzEXj09zvbIAGV7EftgHz7WAbJX4+hKgiMKDsvwKfb1Hv74FyPS+xwZhqxXPUbUIkAlZ9qjYf2WB/k1Z2V2qNgEy/9xnlwv77GwRH8eKOHeZOqVWATJTK60/ZoH8X6pXqrULkGEU58SxV2J3g+R/x9VxrjPwfcnxjQiQ4RdcHMdfiJ8aID+GS+IcF1ScozEBMvyGq6KPup8kR3Fu9H05fq3op1EBMuH+vD76OQnf1ED+W5wWfS7TX55pXIBM2A1ujr6OxdY+fG2NPuBS/e80UwSYU0SRkvhT+NYIW+X5Qt1QFlvi2GGhvF2HF+oIcCb0swLGdJLhRbhTqBgXYUMJPxt0qs37sV4owedhbR/xNXoL7MJ50Uc+UT0qrLT5eKOAn3eFs8i5eCzX/hEWxvYn2ybACE6P4681NVE9g72xL57v4ecl7C8s+Wenub4JhwgrY3VbBNiBk+PYm3RPVC9jSPgGn5jm+too0hBe6THfZhwaRXhw0AIM62TpW4UavVf/9VgQg1+Va18j3CYL8F6BeT/TOfK6Z1ACfCL8fgB3lwjiYxwWx90VTWzbVMJPXoR7Z1uAjTpZelWB/pPtcyzJzbkktpX18xWOiT6KPJbXIsBbOEC4l5+qEPSEfS3kjlOwrQ8/eRHuaFqA/Llbr2xe1Pao5xxhG46P8a/QPRf1JcDEVjaEV2sIum77TlhNdN+NKgswUcwUzdKDshGdB6cbpxGhkgAPCcluIT5oAcmZbBRnRS7LhGeTygJMHDoegU9bQK6o7cLZMfZrdCrTwgKM47b4eSm+bAGpsvajziHKFcKBTSEB8j+P13WoMSgbE55K4TIhec+I/AsSP7SARJ0iLJ1MttsrMovxiP/OKzK7hXcEtg86kISEhISEhISEhISEhIQ24G8QzmB8oMj7vgAAAABJRU5ErkJggg==">
+        </a>
+
+      </div>
+      
     </div>
 
-    <div class="sidebar-arrow">
-      <div class="arrow" onclick="openAndCloseSidebar()">></div>
+    <div id="right-arrow" class="right-arrow" onclick="openAndCloseSidebar()">
+      <!-- <div class=" sidebar-arrow" > -->
+        <div id="arrow" class="arrow" >></div>
+      <!-- </div> -->
     </div>
 
     <div id="main">
@@ -258,6 +268,9 @@
     <footer>
        
       <p>Website created by: Andrew Bespaly</p>
+      <p>Icons provided by 
+        <a href="https://icons8.com/">icons8</a>
+      </p>
     </footer>
 
 
