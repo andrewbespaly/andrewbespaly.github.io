@@ -14,6 +14,10 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -65,10 +69,19 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .left-info div p {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   transform: rotate(90deg);
   white-space: nowrap;
   flex: 4;
@@ -92,6 +105,10 @@ body {
 .left-info a img {
   width: 50px;
   height: auto;
+  -webkit-transition: ease all 0.25s;
+  -moz-transition: ease all 0.25s;
+  -ms-transition: ease all 0.25s;
+  -o-transition: ease all 0.25s;
   transition: ease all 0.25s;
 
   /* height: 50px; */
@@ -143,6 +160,10 @@ body {
 }
 
 #arrow {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition:all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition:all ease 0.5s;
   transition: all ease 0.5s;
 }
 
@@ -161,6 +182,11 @@ hr::after {
   background-color: #355070;
   color: white;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   padding: 1rem;
@@ -213,7 +239,7 @@ header {
 
     background: linear-gradient(to right,#B56576 40%, #E56B6F 45%, #EAAC8B 50%,#E56B6F 55%, #B56576 60%);
 
-    background-clip: border-box;
+    /* background-clip: text; */
     background-size: 200% auto;
     background-clip: text;
     /* -webkit-background-clip: border-box; */
@@ -222,7 +248,15 @@ header {
     display: inline-block;
 
     -webkit-background-clip: text;
+    -moz-background-clip: text; /* Mozilla */
+    -o-background-clip: text; /* Opera */
+    -ms-background-clip: text; /* Internet Explorer */
+    background-clip: text; /* CSS3 */
+
 		-webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; /* Mozilla */
+    -o-text-fill-color: transparent; /* Opera */
+    -ms-text-fill-color: transparent; /* Internet Explorer */
     
     
 }
@@ -305,8 +339,19 @@ header {
   height: 102%;
   background: #355070;
   /* background: red; */
+  -webkit-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -moz-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -o-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -ms-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
+
   animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
+
+  -webkit-transform:  translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
   transform: translateX(0%);
+
   z-index: 1;
 }
 
@@ -319,6 +364,10 @@ header {
   height: 100%;
   background: #b56576;
   animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+  -webkit-transform:  translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
   transform: translateX(0%);
 }
 
@@ -474,6 +523,12 @@ header {
   background: transparent;
   outline: none !important;
   cursor: pointer;
+
+  -webkit-transition:  all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
@@ -493,6 +548,10 @@ header {
   left: 0;
   z-index: -1;
   background: #E56B6F;
+  -webkit-transition:  all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 2px;
 
