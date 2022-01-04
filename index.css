@@ -110,8 +110,6 @@ body {
   -ms-transition: ease all 0.25s;
   -o-transition: ease all 0.25s;
   transition: ease all 0.25s;
-
-  /* height: 50px; */
 }
 
 .left-info a .black {
@@ -141,7 +139,6 @@ body {
   position: fixed;
   background-color: #b56576;
   color:#355070;
-  /* padding-top: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,9 +151,6 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 
-  /* justify-content: center;
-  align-items: center;
-  align-content: center; */
 }
 
 #arrow {
@@ -199,7 +193,6 @@ hr::after {
   letter-spacing: 0.75rem;
     text-shadow: 
     4px 4px 0px rgba(0, 0, 0, 0.9), 
-    /* 7px 7px 0px rgba(0, 0, 0, 0.2); */
 }
 
 header {
@@ -217,13 +210,11 @@ header {
 }
 
 .left-side-about {
-  /* background-color: khaki; */
   justify-content: space-around;
   height: 90vh;
 }
 
 .right-side-about {
-  /* background-color: tomato; */
   justify-content: center;
   height: 90vh;
 }
@@ -237,33 +228,39 @@ header {
     padding-top: 0px;
     padding-bottom: 0px;
 
-    background: linear-gradient(to right,#B56576 40%, #E56B6F 45%, #EAAC8B 50%,#E56B6F 55%, #B56576 60%);
 
-    /* background-clip: text; */
+    background: linear-gradient(to right,#B56576 40%, #E56B6F 45%, #EAAC8B 50%,#E56B6F 55%, #B56576 60%);
     background-size: 200% auto;
-    background-clip: text;
-    /* -webkit-background-clip: border-box; */
-    /* -webkit-text-fill-color: #355070; */
+
+    -webkit-animation: textclip 2s linear infinite;
+    -moz-animation: textclip 2s linear infinite;
+    -o-animation: textclip 2s linear infinite;
+    -ms-animation: textclip 2s linear infinite;
     animation: textclip 2s linear infinite;
     display: inline-block;
 
-    -webkit-background-clip: text;
-    -moz-background-clip: text; /* Mozilla */
-    -o-background-clip: text; /* Opera */
-    -ms-background-clip: text; /* Internet Explorer */
-    background-clip: text; /* CSS3 */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent; 
+    -ms-text-fill-color: transparent;
 
-		-webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent; /* Mozilla */
-    -o-text-fill-color: transparent; /* Opera */
-    -ms-text-fill-color: transparent; /* Internet Explorer */
-    
-    
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    -o-background-clip: text; 
+    -ms-background-clip: text; 
+    background-clip: text; 
+
 }
 
 @keyframes textclip {
 	to {
+    -webkit-background-position: 200% center;
+    -moz-background-position: 200% center;
+    -o-background-position: 200% center;
+    -ms-background-position: 200% center;
 		background-position: 200% center;
+    
+
 	}
 }
 
@@ -302,6 +299,7 @@ header {
   max-width: 60%;
   /* border: solid 0px black; */
   box-shadow: 12px 12px 20px 5px #1a1919cc;
+  /* z-index: 5; */
 
 }
 
@@ -314,20 +312,15 @@ header {
 .about h3 {
   color: whitesmoke;
   font-weight: 200;
-  /* background-color: red; */
   font-size: 100%;
   line-height: 1.5;
   text-shadow: 
     2.5px 2.5px 0px rgba(0, 0, 0, 0.9);
+  z-index: 3;
 }
 
 .about h3 p {
-  /* animation-delay: 1s; */
-  /* background: #004; */
   position: relative;
-  /* overflow: hidden; */
-  /* display: block; */
-  /* line-height: 1.2; */
 }
 
 .about h3 p::before{
@@ -335,22 +328,17 @@ header {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 102%;
-  height: 102%;
+  width: 100%;
+  height: 100%;
   background: #355070;
-  /* background: red; */
-  -webkit-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
-  -moz-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
-  -o-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
-  -ms-animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  z-index: -1;
+  transform-origin: right;
 
-  animation: a-ltr-before 1.25s cubic-bezier(.77,0,.18,1) forwards;
-
-  -webkit-transform:  translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
+  -webkit-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -moz-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -o-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -ms-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
 
   z-index: 1;
 }
@@ -363,12 +351,14 @@ header {
   width: 100%;
   height: 100%;
   background: #b56576;
-  animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
-  -webkit-transform:  translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
+  transform-origin: right;
+
+  -webkit-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -moz-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -o-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  -ms-animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+  animation: collapse-side 1.25s cubic-bezier(.77,0,.18,1) forwards;
+
 }
 
 .about h3 p:nth-of-type(1)::before{
@@ -376,16 +366,16 @@ header {
 }
 .about h3 p:nth-of-type(1)::after{
   background: #6D597A;
-  animation-delay: 0.5s;
+  animation-delay: 0.75s;
 }
 
 .about h3 p:nth-of-type(2)::before{
-  animation: a-rtl-before 1.25s cubic-bezier(.77,0,.18,1) forwards !important;
+  transform-origin: left;
   animation-delay: 1s !important;
 }
 .about h3 p:nth-of-type(2)::after {
-  animation: a-rtl-after 2s cubic-bezier(.77,0,.18,1) forwards !important;
-  animation-delay: 1s !important;
+  transform-origin: left;
+  animation-delay: 1.25s !important;
   background: #EAAC8B;
 }
 
@@ -394,28 +384,18 @@ header {
 }
 .about h3 p:nth-of-type(3)::after {
   background: #E56B6F;
-  animation-delay: 1.5s;
+  animation-delay: 1.75s;
 }
 
-@keyframes a-ltr-before{
-  0% {transform: translateX(0%)}
-  100% {transform: translateX(51%) scale(0, 1)}
+@keyframes collapse-side{
+  100% {
+    transform:scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+  }
 }
-
-@keyframes a-ltr-after{
-  0% {transform: translateX(0%)}
-  100% {transform: translateX(51%) scale(0, 1)  }
-}
-
-@keyframes a-rtl-before{
-  0% {transform: translateX(0%)}
-  100% {transform: translateX(-51%) scale(0, 1)}
-}
-@keyframes a-rtl-after{
-  0% {transform: translateX(0%)}
-  100% {transform: translateX(-51%) scale(0, 1)}
-}
-
 
 .git-logo {
   width: 30px;
@@ -579,7 +559,18 @@ footer {
 @media screen and (max-width: 575px) {
   .jumbotron {
     font-size: 200%;
-    /* background-color: red; */
+
+    /* mobile device having problems with background-clip: text, so on small screens changed to background gradient moving */
+    -webkit-text-fill-color: #355070;
+    -moz-text-fill-color: #355070;
+    -o-text-fill-color: #355070; 
+    -ms-text-fill-color: #355070;
+
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box; 
+    -o-background-clip: border-box; 
+    -ms-background-clip: border-box; 
+    background-clip: border-box; 
   }
   #jobTitle {
     font-size: 115%;
