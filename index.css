@@ -305,19 +305,19 @@ header {
   display: none !important;
 }
 
-.about-me-text {
+/* .about-me-text {
   opacity: 0%;
   animation: desc-hide 0.1s linear 2.5s forwards;
-}
+} */
 
-@keyframes desc-hide{
+/* @keyframes desc-hide{
   from{
     opacity: 0%;
   }
   to{
     opacity: 100%;
   }
-}
+} */
 
 .about h3 {
   color: whitesmoke;
@@ -373,30 +373,29 @@ header {
 }
 
 .about h3 p:nth-of-type(1)::before{
-  animation-delay: 2.6s;
+  animation-delay: 0.5s;
 }
 .about h3 p:nth-of-type(1)::after{
   background: #6D597A;
-  /* background: transparent; */
-  animation-delay: 2.85s;
+  animation-delay: 0.75s;
 }
 
 .about h3 p:nth-of-type(2)::before{
   transform-origin: left;
-  animation-delay: 3.1s !important;
+  animation-delay: 1.0s !important;
 }
 .about h3 p:nth-of-type(2)::after {
   transform-origin: left;
-  animation-delay: 3.35s !important;
+  animation-delay: 1.25s !important;
   background: #EAAC8B;
 }
 
 .about h3 p:nth-of-type(3)::before{
-  animation-delay: 3.6s;
+  animation-delay: 1.5s;
 }
 .about h3 p:nth-of-type(3)::after {
   background: #E56B6F;
-  animation-delay: 3.85s;
+  animation-delay: 1.75s;
 }
 
 @keyframes collapse-side{
@@ -623,16 +622,16 @@ footer {
   .portrait {
     width: 100%;
   }
-  #mockup{
+  /* #mockup{
     content:url("imgs/mockup575.png");
-  }
+  } */
 }
 
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
   #mockup{
     content:url("imgs/mockup400.png");
   }
-}
+} */
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -676,9 +675,9 @@ footer {
   .portrait {
     width: 55%;
   }
-  #mockup{
+  /* #mockup{
     content:url("imgs/mockup767.png");
-  }
+  } */
 
 }
 
@@ -724,9 +723,9 @@ footer {
   .portrait {
     width: 55%;
   }
-  #mockup{
+  /* #mockup{
     content:url("imgs/mockup991.png");
-  }
+  } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -765,10 +764,9 @@ footer {
   .portrait {
     width: 88%;
   }
-  #mockup{
-    /* display: none; */
+  /* #mockup{
     content:url("imgs/mockup1199.png");
-  }
+  } */
 
 }
 
@@ -808,9 +806,9 @@ footer {
   .portrait {
     width: 70%;
   }
-  #mockup{
+  /* #mockup{
     content:url("imgs/mockup1399.png");
-  }
+  } */
 
 
 }
