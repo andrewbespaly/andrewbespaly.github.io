@@ -1,311 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Andrew Bespaly Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="imgs/andylogo_transparent.png" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:ital,wght@1,100;0,300;0,400;0,600;1,600&display=swap" rel="stylesheet"> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Andrew Bespaly</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-  </head>
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Andrew Bespaly</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
 
-<body>
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hello!</span>
+                <span class="down">I am Andrew Bespaly</span>
+            </h1>
+            <p class="header-subtitle">Passionate Game Developer and QA Expert</p>            
 
-    <!-- <img id="mockup" class="mockup" src=imgs/mockup1920.png alt=mockup width=100% /> -->
+        </div>              
+    </header><!-- end of page header -->
 
-    <div id="sidebar" class="sidebar d-flex flex-row">
-      <div class="left-info d-flex flex-column">
-        <div class="name "><p>Andrew Bespaly</p></div>
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/flannel_transparent.png" class="about-img" alt="">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I am a passionate technology professional with a diverse background spanning software development, 
+                        quality assurance, IT, and engineering. With a degree in Computer Science from Portland State University 
+                        and over three years of experience in the gaming industry, 
+                        I have tested several AAA games, served as an interim Software Development Engineer in Test (SDET), 
+                        and contributed to IT operations—all while honing my skills as a game developer.
+                        <br><br>In my free time, I bring my creativity to life by designing and publishing games, taking on 
+                        everything from scripting to complete development. This hands-on approach has deepened my expertise 
+                        in Unity, C#, and C++, and shaped my problem-solving mindset. Whether it’s debugging complex systems, 
+                        creating intuitive user experiences, or ensuring product quality, I thrive in roles that challenge me 
+                        to think critically and deliver impactful results.              
+                    </p>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
 
-        <!-- LinkedIn -->
-        <a class="" href="https://www.linkedin.com/in/andrew-bespaly-9b71b81b9/"> 
-          <img class="black" alt="linkedIn_img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTQxLDRIOUM2LjI0LDQsNCw2LjI0LDQsOXYzMmMwLDIuNzYsMi4yNCw1LDUsNWgzMmMyLjc2LDAsNS0yLjI0LDUtNVY5QzQ2LDYuMjQsNDMuNzYsNCw0MSw0eiBNMTcsMjB2MTloLTZWMjBIMTd6IE0xMSwxNC40N2MwLTEuNCwxLjItMi40NywzLTIuNDdzMi45MywxLjA3LDMsMi40N2MwLDEuNC0xLjEyLDIuNTMtMywyLjUzQzEyLjIsMTcsMTEsMTUuODcsMTEsMTQuNDd6IE0zOSwzOWgtNmMwLDAsMC05LjI2LDAtMTAgYzAtMi0xLTQtMy41LTQuMDRoLTAuMDhDMjcsMjQuOTYsMjYsMjcuMDIsMjYsMjljMCwwLjkxLDAsMTAsMCwxMGgtNlYyMGg2djIuNTZjMCwwLDEuOTMtMi41Niw1LjgxLTIuNTYgYzMuOTcsMCw3LjE5LDIuNzMsNy4xOSw4LjI2VjM5eiI+PC9wYXRoPjwvc3ZnPg=="/>
-          <img class="colored" alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMC4zMiwtMTAuMzIpIHNjYWxlKDEuMTIsMS4xMikiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGc+PHBhdGggZD0iTTE1MC41LDEzMi41ODMzM2MwLDkuODk3MTcgLTguMDE5NSwxNy45MTY2NyAtMTcuOTE2NjcsMTcuOTE2NjdoLTkzLjE2NjY3Yy05Ljg5MzU4LDAgLTE3LjkxNjY3LC04LjAxOTUgLTE3LjkxNjY3LC0xNy45MTY2N3YtOTMuMTY2NjdjMCwtOS44OTcxNyA4LjAyMzA4LC0xNy45MTY2NyAxNy45MTY2NywtMTcuOTE2NjdoOTMuMTY2NjdjOS44OTcxNywwIDE3LjkxNjY3LDguMDE5NSAxNy45MTY2NywxNy45MTY2N3oiIGZpbGw9IiMwMjg4ZDEiPjwvcGF0aD48cGF0aCBkPSJNNDMsNjguMDgzMzNoMTcuOTE2Njd2NjAuOTE2NjdoLTE3LjkxNjY3ek01MS45MDQ1OCw2MC45MTY2N2gtMC4xMDAzM2MtNS4zNDYzMywwIC04LjgwNDI1LC0zLjk4NDY3IC04LjgwNDI1LC04Ljk2MTkyYzAsLTUuMDg0NzUgMy41NjU0MiwtOC45NTQ3NSA5LjAwODUsLTguOTU0NzVjNS40NTAyNSwwIDguODA3ODMsMy44NyA4LjkwODE3LDguOTU0NzVjMCw0Ljk3MzY3IC0zLjQ1NzkyLDguOTYxOTIgLTkuMDEyMDgsOC45NjE5MnpNMTI5LDEyOWgtMTcuOTE2Njd2LTMyLjYwNDc1YzAsLTcuODc2MTcgLTQuMzg5NTgsLTEzLjI1MTE3IC0xMS40MzgsLTEzLjI1MTE3Yy01LjM3ODU4LDAgLTguMjg4MjUsMy42MjYzMyAtOS43MDAwOCw3LjEzMDgzYy0wLjUxNiwxLjI1NDE3IC0wLjM2MTkyLDQuNzIyODMgLTAuMzYxOTIsNi40NzUwOHYzMi4yNWgtMTcuOTE2Njd2LTYwLjkxNjY3aDE3LjkxNjY3djkuMzc0YzIuNTgzNTgsLTMuOTk5IDYuNjI5MTcsLTkuMzc0IDE2Ljk3NzgzLC05LjM3NGMxMi44MjExNywwIDIyLjQzNTI1LDguMDYyNSAyMi40MzUyNSwyNi4wNjUxN2wwLjAwMzU4LDM0Ljg1MTV6IiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+"/>
-        </a>
-        <a class="" href="https://github.com/andrewbespaly"> 
-          <img class="black" alt="github_logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjAiIGhlaWdodD0iNjAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTE1LDNDOC4zNzMsMywzLDguMzczLDMsMTVjMCw1LjYyMywzLjg3MiwxMC4zMjgsOS4wOTIsMTEuNjNDMTIuMDM2LDI2LjQ2OCwxMiwyNi4yOCwxMiwyNi4wNDd2LTIuMDUxIGMtMC40ODcsMC0xLjMwMywwLTEuNTA4LDBjLTAuODIxLDAtMS41NTEtMC4zNTMtMS45MDUtMS4wMDljLTAuMzkzLTAuNzI5LTAuNDYxLTEuODQ0LTEuNDM1LTIuNTI2IGMtMC4yODktMC4yMjctMC4wNjktMC40ODYsMC4yNjQtMC40NTFjMC42MTUsMC4xNzQsMS4xMjUsMC41OTYsMS42MDUsMS4yMjJjMC40NzgsMC42MjcsMC43MDMsMC43NjksMS41OTYsMC43NjkgYzAuNDMzLDAsMS4wODEtMC4wMjUsMS42OTEtMC4xMjFjMC4zMjgtMC44MzMsMC44OTUtMS42LDEuNTg4LTEuOTYyYy0zLjk5Ni0wLjQxMS01LjkwMy0yLjM5OS01LjkwMy01LjA5OCBjMC0xLjE2MiwwLjQ5NS0yLjI4NiwxLjMzNi0zLjIzM0M5LjA1MywxMC42NDcsOC43MDYsOC43Myw5LjQzNSw4YzEuNzk4LDAsMi44ODUsMS4xNjYsMy4xNDYsMS40ODFDMTMuNDc3LDkuMTc0LDE0LjQ2MSw5LDE1LjQ5NSw5IGMxLjAzNiwwLDIuMDI0LDAuMTc0LDIuOTIyLDAuNDgzQzE4LjY3NSw5LjE3LDE5Ljc2Myw4LDIxLjU2NSw4YzAuNzMyLDAuNzMxLDAuMzgxLDIuNjU2LDAuMTAyLDMuNTk0IGMwLjgzNiwwLjk0NSwxLjMyOCwyLjA2NiwxLjMyOCwzLjIyNmMwLDIuNjk3LTEuOTA0LDQuNjg0LTUuODk0LDUuMDk3QzE4LjE5OSwyMC40OSwxOSwyMi4xLDE5LDIzLjMxM3YyLjczNCBjMCwwLjEwNC0wLjAyMywwLjE3OS0wLjAzNSwwLjI2OEMyMy42NDEsMjQuNjc2LDI3LDIwLjIzNiwyNywxNUMyNyw4LjM3MywyMS42MjcsMywxNSwzeiI+PC9wYXRoPjwvc3ZnPg=="/>
-          <img class="colored" alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48bGluZWFyR3JhZGllbnQgaWQ9InJMMndwcEh5eEhWYm9id25kc1Q2Q2FfQVpPWk5uWTczaGFqX2dyMSIgeDE9IjQiIHgyPSI0NCIgeTE9IjIzLjUwOCIgeTI9IjIzLjUwOCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzRjNGM0YyI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM0MzQzNCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNyTDJ3cHBIeXhIVmJvYnduZHNUNkNhX0FaT1pOblk3M2hhal9ncjEpIiBkPSJNMjQsNEMxMi45NTQsNCw0LDEyLjk1NCw0LDI0YzAsOC44ODcsNS44MDEsMTYuNDExLDEzLjgyLDE5LjAxNmgxMi4zNglDMzguMTk5LDQwLjQxMSw0NCwzMi44ODcsNDQsMjRDNDQsMTIuOTU0LDM1LjA0Niw0LDI0LDR6Ij48L3BhdGg+PHBhdGggZD0iTTMwLjAxLDQxLjk5NkwzMCwzNi4xOThjMC0wLjkzOS0wLjIyLTEuODU2LTAuNjQyLTIuNjg3YzUuNjQxLTEuMTMzLDguMzg2LTQuNDY4LDguMzg2LTEwLjE3NwljMC0yLjI1NS0wLjY2NS00LjI0Ni0xLjk3Ni01LjkyYzAuMS0wLjMxNywwLjE3NC0wLjY0NSwwLjIyLTAuOTgxYzAuMTg4LTEuMzY5LTAuMDIzLTIuMjY0LTAuMTkzLTIuOTg0bC0wLjAyNy0wLjExNgljLTAuMTg2LTAuNzk2LTAuNDA5LTEuMzY0LTAuNDE4LTEuMzg4bC0wLjExMS0wLjI4MmwtMC4xMTEtMC4yODJsLTAuMzAyLTAuMDMybC0wLjMwMy0wLjAzMmMwLDAtMC4xOTktMC4wMjEtMC41MDEtMC4wMjEJYy0wLjQxOSwwLTEuMDQsMC4wNDItMS42MjcsMC4yNDFsLTAuMTk2LDAuMDY2Yy0wLjc0LDAuMjQ5LTEuNDM5LDAuNDg1LTIuNDE3LDEuMDY5Yy0wLjI4NiwwLjE3MS0wLjU5OSwwLjM2Ni0wLjkzNCwwLjU4NAlDMjcuMzM0LDEyLjg4MSwyNS43MDUsMTIuNjksMjQsMTIuNjljLTEuNzIyLDAtMy4zNjUsMC4xOTItNC44ODksMC41NzFjLTAuMzM5LTAuMjItMC42NTQtMC40MTctMC45NDItMC41ODkJYy0wLjk3OC0wLjU4NC0xLjY3Ny0wLjgxOS0yLjQxNy0xLjA2OWwtMC4xOTYtMC4wNjZjLTAuNTg1LTAuMTk5LTEuMjA3LTAuMjQxLTEuNjI2LTAuMjQxYy0wLjMwMiwwLTAuNTAxLDAuMDIxLTAuNTAxLDAuMDIxCWwtMC4zMDIsMC4wMzJsLTAuMywwLjAzMWwtMC4xMTIsMC4yODFsLTAuMTEzLDAuMjgzYy0wLjAxLDAuMDI2LTAuMjMzLDAuNTk0LTAuNDE5LDEuMzkxbC0wLjAyNywwLjExNQljLTAuMTcsMC43MTktMC4zODEsMS42MTUtMC4xOTMsMi45ODNjMC4wNDgsMC4zNDYsMC4xMjUsMC42ODUsMC4yMywxLjAxMWMtMS4yODUsMS42NjYtMS45MzYsMy42NDYtMS45MzYsNS44OQljMCw1LjY5NSwyLjc0OCw5LjAyOCw4LjM5NywxMC4xN2MtMC4xOTQsMC4zODgtMC4zNDUsMC43OTgtMC40NTIsMS4yMjRjLTAuMTk3LDAuMDY3LTAuMzc4LDAuMTEyLTAuNTM4LDAuMTM3CWMtMC4yMzgsMC4wMzYtMC40ODcsMC4wNTQtMC43MzksMC4wNTRjLTAuNjg2LDAtMS4yMjUtMC4xMzQtMS40MzUtMC4yNTljLTAuMzEzLTAuMTg2LTAuODcyLTAuNzI3LTEuNDE0LTEuNTE4CWMtMC40NjMtMC42NzUtMS4xODUtMS41NTgtMS45OTItMS45MjdjLTAuNjk4LTAuMzE5LTEuNDM3LTAuNTAyLTIuMDI5LTAuNTAyYy0wLjEzOCwwLTAuMjY1LDAuMDEtMC4zNzYsMC4wMjgJYy0wLjUxNywwLjA4Mi0wLjk0OSwwLjM2Ni0xLjE4NCwwLjc4Yy0wLjIwMywwLjM1Ny0wLjIzNSwwLjc3My0wLjA4OCwxLjE0MWMwLjIxOSwwLjU0OCwwLjg1MSwwLjk4NSwxLjM0MywxLjI1NQljMC4yNDIsMC4xMzMsMC43NjUsMC42MTksMS4wNywxLjEwOWMwLjIyOSwwLjM2OCwwLjMzNSwwLjYzLDAuNDgyLDAuOTkyYzAuMDg3LDAuMjE1LDAuMTgzLDAuNDQ5LDAuMzEzLDAuNzMyCWMwLjQ3LDEuMDIyLDEuOTM3LDEuOTI0LDIuMTAzLDIuMDIzYzAuODA2LDAuNDgzLDIuMTYxLDAuNjM4LDMuMTU3LDAuNjgzbDAuMTIzLDAuMDAzYzAsMCwwLjAwMSwwLDAuMDAxLDAJYzAuMjQsMCwwLjU3LTAuMDIzLDEuMDA0LTAuMDcxdjIuNjEzYzAuMDAyLDAuNTI5LTAuNTM3LDAuNjQ5LTEuMjUsMC42MzhsMC41NDcsMC4xODRDMTkuMzk1LDQzLjU3MiwyMS42NDUsNDQsMjQsNDQJYzIuMzU1LDAsNC42MDUtMC40MjgsNi43MDMtMS4xNzZsMC43MDMtMC4yNjJDMzAuNjk1LDQyLjUzOCwzMC4wMTYsNDIuNDIyLDMwLjAxLDQxLjk5NnoiIG9wYWNpdHk9Ii4wNSI+PC9wYXRoPjxwYXRoIGQ9Ik0zMC43ODEsNDIuNzk3Yy0wLjQwNiwwLjA0Ny0xLjI4MS0wLjEwOS0xLjI4MS0wLjc5NXYtNS44MDRjMC0xLjA5NC0wLjMyOC0yLjE1MS0wLjkzNi0zLjA1MgljNS45MTUtMC45NTcsOC42NzktNC4wOTMsOC42NzktOS44MTJjMC0yLjIzNy0wLjY4Ni00LjE5NC0yLjAzOS01LjgyMmMwLjEzNy0wLjM2NSwwLjIzMy0wLjc1LDAuMjg4LTEuMTQ3CWMwLjE3NS0xLjI3Ni0wLjAxNi0yLjA4Ni0wLjE4NC0yLjgwMWwtMC4wMjctMC4xMTZjLTAuMTc4LTAuNzYxLTAuMzg4LTEuMjk3LTAuMzk3LTEuMzE5bC0wLjExMS0wLjI4MmwtMC4zMDMtMC4wMzIJYzAsMC0wLjE3OC0wLjAxOS0wLjQ0OS0wLjAxOWMtMC4zODEsMC0wLjk0NCwwLjAzNy0xLjQ2NiwwLjIxNWwtMC4xOTYsMC4wNjZjLTAuNzE0LDAuMjQxLTEuMzg5LDAuNDY4LTIuMzIxLDEuMDI0CWMtMC4zMzIsMC4xOTgtMC43MDIsMC40MzEtMS4xMDEsMC42OTRDMjcuNDA0LDEzLjM5NCwyNS43NDUsMTMuMTksMjQsMTMuMTljLTEuNzYyLDAtMy40MzUsMC4yMDUtNC45NzksMC42MQljLTAuNDAzLTAuMjY1LTAuNzc1LTAuNDk5LTEuMTA5LTAuNjk5Yy0wLjkzMi0wLjU1Ni0xLjYwNy0wLjc4NC0yLjMyMS0xLjAyNGwtMC4xOTYtMC4wNjZjLTAuNTIxLTAuMTc3LTEuMDg1LTAuMjE1LTEuNDY2LTAuMjE1CWMtMC4yNzEsMC0wLjQ0OSwwLjAxOS0wLjQ0OSwwLjAxOWwtMC4zMDIsMC4wMzJsLTAuMTEzLDAuMjgzYy0wLjAwOSwwLjAyMi0wLjIxOSwwLjU1OC0wLjM5NywxLjMxOWwtMC4wMjcsMC4xMTYJYy0wLjE2OSwwLjcxNS0wLjM2LDEuNTI0LTAuMTg0LDIuOGMwLjA1NiwwLjQwNywwLjE1NiwwLjgwMSwwLjI5OCwxLjE3NGMtMS4zMjcsMS42Mi0xLjk5OSwzLjU2Ny0xLjk5OSw1Ljc5NQljMCw1LjcwMywyLjc2Niw4LjgzOCw4LjY4Niw5LjgwNmMtMC4zOTUsMC41OS0wLjY3MSwxLjI1NS0wLjgxMywxLjk2NGMtMC4zMywwLjEzLTAuNjI5LDAuMjE2LTAuODkxLDAuMjU2CWMtMC4yNjMsMC4wNC0wLjUzNywwLjA2LTAuODE0LDAuMDZjLTAuNjksMC0xLjM1My0wLjEyOS0xLjY5LTAuMzI5Yy0wLjQ0LTAuMjYxLTEuMDU3LTAuOTE0LTEuNTcyLTEuNjY1CWMtMC4zNS0wLjUxLTEuMDQ3LTEuNDE3LTEuNzg4LTEuNzU1Yy0wLjYzNS0wLjI5LTEuMjk4LTAuNDU3LTEuODIxLTAuNDU3Yy0wLjExLDAtMC4yMSwwLjAwOC0wLjI5OCwwLjAyMgljLTAuMzY2LDAuMDU4LTAuNjY4LDAuMjUyLTAuODI4LDAuNTM0Yy0wLjEyOCwwLjIyNC0wLjE0OSwwLjQ4My0wLjA1OSwwLjcwOGMwLjE3OSwwLjQ0OCwwLjg0MiwwLjg1LDEuMTE5LDEuMDAyCWMwLjMzNSwwLjE4NCwwLjkxOSwwLjc0NCwxLjI1NCwxLjI4NGMwLjI1MSwwLjQwNCwwLjM3LDAuNjk3LDAuNTIxLDEuMDY3YzAuMDg1LDAuMjA5LDAuMTc4LDAuNDM3LDAuMzA0LDAuNzEyCWMwLjMzMSwwLjcxOSwxLjM1MywxLjQ3MiwxLjkwNSwxLjgwM2MwLjc1NCwwLjQ1MiwyLjE1NCwwLjU3OCwyLjkyMiwwLjYxMmwwLjExMSwwLjAwMmMwLjI5OSwwLDAuOC0wLjA0NSwxLjQ5NS0wLjEzNXYzLjE3NwljMCwwLjc3OS0wLjk5MSwwLjgxLTEuMjM0LDAuODFjLTAuMDMxLDAsMC41MDMsMC4xODQsMC41MDMsMC4xODRDMTkuNzMxLDQzLjY0LDIxLjgyMiw0NCwyNCw0NGMyLjE3OCwwLDQuMjY5LTAuMzYsNi4yMzEtMS4wMDMJQzMwLjIzMSw0Mi45OTcsMzAuODEyLDQyLjc5MywzMC43ODEsNDIuNzk3eiIgb3BhY2l0eT0iLjA3Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTM2Ljc0NCwyMy4zMzRjMC0yLjMxLTAuNzgyLTQuMjI2LTIuMTE3LTUuNzI4YzAuMTQ1LTAuMzI1LDAuMjk2LTAuNzYxLDAuMzcxLTEuMzA5CWMwLjE3Mi0xLjI1LTAuMDMxLTItMC4yMDMtMi43MzRzLTAuMzc1LTEuMjUtMC4zNzUtMS4yNXMtMC45MjItMC4wOTQtMS43MDMsMC4xNzJzLTEuNDUzLDAuNDY5LTIuNDIyLDEuMDQ3CWMtMC40NTMsMC4yNy0wLjkwOSwwLjU2Ni0xLjI3LDAuODA2QzI3LjQ4MiwxMy45MSwyNS43ODUsMTMuNjksMjQsMTMuNjljLTEuODAxLDAtMy41MTMsMC4yMjEtNS4wNjcsMC42NTIJYy0wLjM2Mi0wLjI0MS0wLjgyMS0wLjUzOS0xLjI3Ny0wLjgxMWMtMC45NjktMC41NzgtMS42NDEtMC43ODEtMi40MjItMS4wNDdzLTEuNzAzLTAuMTcyLTEuNzAzLTAuMTcycy0wLjIwMywwLjUxNi0wLjM3NSwxLjI1CXMtMC4zNzUsMS40ODQtMC4yMDMsMi43MzRjMC4wNzcsMC41NjIsMC4yMzMsMS4wMDYsMC4zODIsMS4zMzNjLTEuMzEsMS40OTMtMi4wNzgsMy4zOTctMi4wNzgsNS43MDQJYzAsNS45ODMsMy4yMzIsOC43MTQsOS4xMjEsOS40MzVjLTAuNjg3LDAuNzI2LTEuMTQ4LDEuNjU2LTEuMzAzLDIuNjkxYy0wLjM4NywwLjE3LTAuODMzLDAuMzMtMS4yNjIsMC4zOTQJYy0xLjEwNCwwLjE2Ny0yLjI3MSwwLTIuODMzLTAuMzMzcy0xLjIyOS0xLjA4My0xLjcyOS0xLjgxM2MtMC40MjItMC42MTYtMS4wMzEtMS4zMzEtMS41ODMtMS41ODMJYy0wLjcyOS0wLjMzMy0xLjQzOC0wLjQ1OC0xLjgzMy0wLjM5NmMtMC4zOTYsMC4wNjMtMC41ODMsMC4zNTQtMC41LDAuNTYzYzAuMDgzLDAuMjA4LDAuNDc5LDAuNTIxLDAuODk2LDAuNzUJYzAuNDE3LDAuMjI5LDEuMDYzLDAuODU0LDEuNDM4LDEuNDU4YzAuNDE4LDAuNjc0LDAuNSwxLjA2MywwLjg1NCwxLjgzM2MwLjI0OSwwLjU0MiwxLjEwMSwxLjIxOSwxLjcwOCwxLjU4MwljMC41MjEsMC4zMTMsMS41NjIsMC40OTEsMi42ODgsMC41NDJjMC4zODksMC4wMTgsMS4zMDgtMC4wOTYsMi4wODMtMC4yMDZ2My43NWMwLDAuNjM5LTAuNTg1LDEuMTI1LTEuMTkxLDEuMDEzCUMxOS43NTYsNDMuNjY4LDIxLjgzMyw0NCwyNCw0NGMyLjE2NiwwLDQuMjQzLTAuMzMyLDYuMTktMC45ODRDMjkuNTg1LDQzLjEyNywyOSw0Mi42NDEsMjksNDIuMDAydi01LjgwNAljMC0xLjMyOS0wLjUyNy0yLjUzLTEuMzczLTMuNDI1QzMzLjQ3MywzMi4wNzEsMzYuNzQ0LDI5LjQwNSwzNi43NDQsMjMuMzM0eiBNMTEuMjM5LDMyLjcyN2MtMC4xNTQtMC4wNzktMC4yMzctMC4yMjUtMC4xODUtMC4zMjgJYzAuMDUyLTAuMTAzLDAuMjItMC4xMjIsMC4zNzQtMC4wNDNjMC4xNTQsMC4wNzksMC4yMzcsMC4yMjUsMC4xODUsMC4zMjhTMTEuMzkzLDMyLjgwNiwxMS4yMzksMzIuNzI3eiBNMTIuNDUxLDMzLjQ4MgljLTAuMDgxLDAuMDg4LTAuMjU1LDAuMDYtMC4zODktMC4wNjJzLTAuMTc3LTAuMjkzLTAuMDk2LTAuMzgxYzAuMDgxLTAuMDg4LDAuMjU1LTAuMDYsMC4zODksMC4wNjJTMTIuNTMyLDMzLjM5NCwxMi40NTEsMzMuNDgyeiBNMTMuMjA1LDM0LjczMmMtMC4xMDIsMC4wNzItMC4yNzUsMC4wMDUtMC4zODYtMC4xNXMtMC4xMTgtMC4zNC0wLjAxNi0wLjQxMnMwLjI3NS0wLjAwNSwwLjM4NiwwLjE1CUMxMy4yOTksMzQuNDc1LDEzLjMwNywzNC42NiwxMy4yMDUsMzQuNzMyeiBNMTQuMjg4LDM1LjY3M2MtMC4wNjksMC4xMTItMC4yNjUsMC4xMTctMC40MzcsMC4wMTJzLTAuMjU2LTAuMjgxLTAuMTg3LTAuMzkzCWMwLjA2OS0wLjExMiwwLjI2NS0wLjExNywwLjQzNy0wLjAxMlMxNC4zNTcsMzUuNTYxLDE0LjI4OCwzNS42NzN6IE0xNS4zMTIsMzYuNTk0Yy0wLjIxMy0wLjAyNi0wLjM3MS0wLjE1OS0wLjM1My0wLjI5NwljMC4wMTctMC4xMzgsMC4yMDQtMC4yMjgsMC40MTYtMC4yMDJjMC4yMTMsMC4wMjYsMC4zNzEsMC4xNTksMC4zNTMsMC4yOTdDMTUuNzExLDM2LjUyOSwxNS41MjUsMzYuNjIsMTUuMzEyLDM2LjU5NHogTTE2Ljk2MywzNi44MzNjLTAuMjI3LTAuMDEzLTAuNDA0LTAuMTQzLTAuMzk1LTAuMjg5YzAuMDA5LTAuMTQ2LDAuMi0wLjI1NSwwLjQyNy0wLjI0MmMwLjIyNywwLjAxMywwLjQwNCwwLjE0MywwLjM5NSwwLjI4OQlDMTcuMzgxLDM2LjczOCwxNy4xOSwzNi44NDYsMTYuOTYzLDM2LjgzM3ogTTE4LjUyMSwzNi42NzdjLTAuMjQyLDAtMC40MzgtMC4xMjYtMC40MzgtMC4yODFzMC4xOTYtMC4yODEsMC40MzgtMC4yODEJYzAuMjQyLDAsMC40MzgsMC4xMjYsMC40MzgsMC4yODFTMTguNzYyLDM2LjY3NywxOC41MjEsMzYuNjc3eiI+PC9wYXRoPjwvc3ZnPg=="/>
-        </a>
-        <!-- Email -->
-        <a class="" href="mailto:andrew.bespaly@gmail.com">
-          <img class="black" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADrElEQVR4nO3aWYgdRRQG4M8kbhM1kqhxgRgXUHFBUFERRUQEtxcFMfgiCoIRwfgSX10QBQlKjCioCBIUFEHEPS5EBGM0RCEoYkZMJDpGJi6Dccu0D1XDbWfm3unu2z231frhMHOrq06d/7/Vp07XbRISEhISEhISEhISEhL+f9irS/vhWIODZjGWJvEzlmOkSOcT4t8zsRPZv9x2Ri55bj2xDjfE/0/E9haQqGo7cGrkch3eLCLAOxjH7fHz0fiiBWTK2jCOixxuwZ7IrZAAE07ui22LsbkFpIraFhwZY1+Zay8tQIaHMQcH4/0WkJvJPsQiIcE/MOlaJQEyPI15mI/XWkCym72NAzEXj09zvbIAGV7EftgHz7WAbJX4+hKgiMKDsvwKfb1Hv74FyPS+xwZhqxXPUbUIkAlZ9qjYf2WB/k1Z2V2qNgEy/9xnlwv77GwRH8eKOHeZOqVWATJTK60/ZoH8X6pXqrULkGEU58SxV2J3g+R/x9VxrjPwfcnxjQiQ4RdcHMdfiJ8aID+GS+IcF1ScozEBMvyGq6KPup8kR3Fu9H05fq3op1EBMuH+vD76OQnf1ED+W5wWfS7TX55pXIBM2A1ujr6OxdY+fG2NPuBS/e80UwSYU0SRkvhT+NYIW+X5Qt1QFlvi2GGhvF2HF+oIcCb0swLGdJLhRbhTqBgXYUMJPxt0qs37sV4owedhbR/xNXoL7MJ50Uc+UT0qrLT5eKOAn3eFs8i5eCzX/hEWxvYn2ybACE6P4681NVE9g72xL57v4ecl7C8s+Wenub4JhwgrY3VbBNiBk+PYm3RPVC9jSPgGn5jm+too0hBe6THfZhwaRXhw0AIM62TpW4UavVf/9VgQg1+Va18j3CYL8F6BeT/TOfK6Z1ACfCL8fgB3lwjiYxwWx90VTWzbVMJPXoR7Z1uAjTpZelWB/pPtcyzJzbkktpX18xWOiT6KPJbXIsBbOEC4l5+qEPSEfS3kjlOwrQ8/eRHuaFqA/Llbr2xe1Pao5xxhG46P8a/QPRf1JcDEVjaEV2sIum77TlhNdN+NKgswUcwUzdKDshGdB6cbpxGhkgAPCcluIT5oAcmZbBRnRS7LhGeTygJMHDoegU9bQK6o7cLZMfZrdCrTwgKM47b4eSm+bAGpsvajziHKFcKBTSEB8j+P13WoMSgbE55K4TIhec+I/AsSP7SARJ0iLJ1MttsrMovxiP/OKzK7hXcEtg86kISEhISEhISEhISEhIQ24G8QzmB8oMj7vgAAAABJRU5ErkJggg==">
-          <img class="colored" src="data:image/png;base64,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">
-        </a>
-        </div>
-      
-    </div>
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
 
-    <div id="right-arrow" class="right-arrow" onclick="openAndCloseSidebar()">
-      <!-- <div class=" sidebar-arrow" > -->
-        <div id="arrow" class="arrow" >></div>
-      <!-- </div> -->
-    </div>
-
-    <div id="main">
-    <section class="about">
-      
-      <div class="container-fluid d-flex p-2 flex-row ">
-
-        <!-- left of about me section flex table -->
-        <div class="flex-column d-flex col left-side-about">
-          <!-- MY Name -->
-          <div class="d-flex justify-content-center">
-            <div class="jumbotron d-flex flex-column w-75 ">
-              <p class="d-flex ">Andrew</p>
-              <p class="d-flex ">Bespaly</p>
+            <div class="container">
+                <!-- <h1 class="text-center my-5">My Projects</h1> -->
+                <div class="row project-section">
+                    <!-- Project 1 -->
+                    <div class="col-md-6 mb-4">
+                        <!-- <img 
+                            src="https://via.placeholder.com/500x300" 
+                            alt="Project 1" 
+                            class="img-fluid project-image"
+                        > -->
+                        <video controls muted class="active img-fluid">
+                            <source src="imgs/bounce_ball_promo.mp4" type="video/mp4" >
+                            Your browser does not support HTML video
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <h2 class="project-title">Bounce Ball Blitz</h2>
+                        <p class="project-description">
+                            An immersive Unity-based game available on the App Store, 
+                            players embark on an exhilarating journey through challenging courses designed 
+                            to test their basketball skills. With precise controls and realistic physics, navigate 
+                            through intricate obstacles and ramps to make impressive basketball shots. Developed 
+                            using the Unity Game Engine and utilizing C# scripting, this game showcases a 
+                            seamless blend of captivating gameplay, stunning visuals, and engaging level design.
+                        </p>
+                        <a href="https://apps.apple.com/us/app/bounce-ball-blitz/id1663136205" class="btn btn-primary view-project-btn" target="_blank">App Store</a>
+                        <a href="https://store.steampowered.com/app/2618350/Bounce_Ball_Blitz/" class="btn btn-primary view-project-btn" target="_blank">Steam</a>
+                    </div>
+                </div>
+                <div class="row project-section">
+                    <!-- Project 2 -->
+                    <div class="col-md-6 order-md-2 mb-4">
+                        <video controls muted class="active img-fluid portrait">
+                            <source src="imgs/Shuffle_Shot_iPhone.mp4" type="video/mp4" >
+                            Your browser does not support HTML video
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center order-md-1">
+                        <h2 class="project-title">Shuffle Shot</h2>
+                        <p class="project-description">
+                            In this challenging and addictive game, hold your finger on the screen to build up power 
+                            and shoot your puck across the board, aiming to land it in the end zone.
+                            Every successful landing leads to a new board appearing at a 90-degree angle. 
+                            This game features challenging zones with different obstacles, collectable coins that unlock new player
+                            skins and hats, a leaderboard implemented with Playfab, IAP purchases with the App Store, and the ability to 
+                            save purchases to an account.
+                        </p>
+                        <a href="https://apps.apple.com/us/app/shuffle-shot/id1669947421?uo=4&at=11l6hc&app=itunes&ct=fnd" target="_blank" class="btn btn-primary view-project-btn">App Store</a>
+                    </div>
+                </div>
+                <div class="row project-section">
+                    <!-- Project 3 -->
+                    <div class="col-md-6 mb-4">
+                        <video controls muted class="active img-fluid portrait">
+                            <source src="imgs/soakpreview.mp4" type="video/mp4" >
+                            Your browser does not support HTML video
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <h2 class="project-title">Soak: Sleep & Wakeup to Videos</h2>
+                        <p class="project-description">
+                            Use YouTube videos as a sleep timer and an alarm clock with Soak, 
+                            a project I created over the summer using JavaScript, React-Native, 
+                            Google Cloud Platform for API usage, and Firebase for database, cloud functions, 
+                            and cloud messaging services.
+                        </p>
+                        <a href="https://apps.apple.com/app/id1572946421" class="btn btn-primary view-project-btn" target="_blank">App Store</a>
+                    </div>
+                </div>
+                <div class="row project-section">
+                    <!-- Project 4 -->
+                    <div class="col-md-6 order-md-2 mb-4">
+                        <video controls muted class="active img-fluid">
+                            <source src="imgs/char_recog_results.mp4" type="video/mp4" >
+                            Your browser does not support HTML video
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center order-md-1">
+                        <h2 class="project-title">Canvas Character Recognition</h2>
+                        <p class="project-description">
+                            A program I made that tracks a color of your choosing, lets you draw 
+                            handwritten letters and numbers, computes what characters you drew using
+                            a Machine Learning algorithm and prints them to the screen.
+                        </p>
+                        <a href="https://github.com/andrewbespaly/canvas_character_recognition" class="btn btn-primary view-project-btn" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="d-flex justify-content-center p-2 when-small-screen-img">
-            <img src="imgs/flannel_transparent.png" alt="" class="img-fluid about_img" />
-          </div>
-
-          <!-- My job title -->
-          <div id="jobTitle" class="d-flex justify-content-center ">
-            Software Engineer
-          </div>
-
-          <!-- About Text -->
-          <div class="d-flex justify-content-center about-me-text">
-            <h3 class="col-12 d-inline-block ">
-              <p>
-              I love taking projects all the way from rough draft mock-ups to finished products.
-              </p>
-              <!-- <br/> -->
-              <p>I'm a Portland State University alumnus, with a Bachelor's of Science in 
-              Computer Science. 
-              </p>
-              <!-- <br/> -->
-              <p>
-              I have a passion for efficient algorithms and innovative technology.
-              I try my best to push myself daily as I learn new skills and take on new challenges.
-              </p>
-              <!-- <br/> -->
-            </h3>
-          </div>
-        </div>
-
-
-        <!-- Picture of Myself / right of about me section flex table-->
-        <div class="flex-column p-2 d-flex col-5 right-side-about ">
-
-          <div class="d-flex justify-content-center p-2 right-img-about">
-            <img src="imgs/flannel_transparent.png" alt="" class="img-fluid about_img" />
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <hr />
-    <section class="projects">
-
-      <div data-aos="fade-right"
-        data-aos-duration="2000">
-          <div class="row mx-1 mx-sm-4">
-            <div class="item-img col-10 col-md-7 col-lg-4 order-2 order-md-1 order-lg-2 d-inline-flex mx-auto">
-                
-                <video controls muted class="active img-fluid">
-                  <source src="imgs/bounce_ball_promo.mp4" type="video/mp4" >
-                  Your browser does not support HTML video
-                </video>
-            </div>
-            <div class="item-text col-10 col-md-10 col-lg-6 py-1 mx-auto mb-5 my-sm-auto mt-3 order-2 order-md-2 order-lg-1">
-              <h2 class="project-title">Bounce Ball Blitz</h2><br />
-              <div class="project-desc">
-                An immersive Unity-based game available on the App Store, 
-                players embark on an exhilarating journey through challenging courses designed 
-                to test their basketball skills. With precise controls and realistic physics, navigate 
-                through intricate obstacles and ramps to make impressive basketball shots. Developed 
-                using the Unity Game Engine and utilizing C# scripting, this game showcases a 
-                seamless blend of captivating gameplay, stunning visuals, and engaging level design.
-              </div>
-              <br />
-              <a class="project-link" href="https://apps.apple.com/us/app/bounce-ball-blitz/id1663136205" target="_blank">View in App Store</a>
-            </div>
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
             
-          </div>
+        <p class="text-center mb-5">Feel free to reach out to me through any of the platforms below!</p>
+        <div class="d-flex justify-content-center flex-wrap gap-5 contact-links">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/andrewbespaly/" target="_blank" class="text-decoration-none">
+                <div class="d-flex align-items-center contact-item">
+                    <img 
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@8.3.0/icons/linkedin.svg" 
+                        alt="LinkedIn" 
+                        width="40"
+                        class="me-3"
+                    >
+                    <span class="text-primary fw-bold">LinkedIn</span>
+                </div>
+            </a>
+            <!-- Email -->
+            <a href="mailto:andrew.bespaly@gmail.com" class="text-decoration-none">
+                <div class="d-flex align-items-center contact-item">
+                    <img 
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@8.3.0/icons/maildotru.svg" 
+                        alt="Email" 
+                        width="40"
+                        class="me-3"
+                    >
+                    <span class="text-dark fw-bold">Email</span>
+                </div>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/andrew_bespaly/?hl=en" target="_blank" class="text-decoration-none">
+                <div class="d-flex align-items-center contact-item">
+                    <img 
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@8.3.0/icons/instagram.svg" 
+                        alt="Instagram" 
+                        width="40"
+                        class="me-3"
+                    >
+                    <span class="text-dark fw-bold">Instagram</span>
+                </div>
+            </a>
+           
+            <!-- GitHub -->
+            <a href="https://github.com/andrewbespaly" target="_blank" class="text-decoration-none">
+                <div class="d-flex align-items-center contact-item">
+                    <img 
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@8.3.0/icons/github.svg" 
+                        alt="GitHub" 
+                        width="40"
+                        class="me-3"
+                    >
+                    <span class="text-dark fw-bold">GitHub</span>
+                </div>
+            </a>
         </div>
 
-      <div data-aos="fade-right"
-      data-aos-duration="2000">
-        <div class="row mx-1 mx-sm-4">
-          <div class="item-img col-10 col-md-7 col-lg-4 order-2 order-md-1 order-lg-2 d-inline-flex mx-auto">
-              
-            <video controls muted class="active img-fluid portrait">
-              <source src="imgs/Shuffle_Shot_iPhone.mp4" type="video/mp4" >
-              Your browser does not support HTML video
-            </video>
-          </div>
-          <div class="item-text col-10 col-md-10 col-lg-6 py-1 mx-auto mb-5 my-sm-auto mt-3 order-2 order-md-2 order-lg-1">
-            <h2 class="project-title">Shuffle Shot</h2><br />
-            <div class="project-desc">
-              In this challenging and addictive game, hold your finger on the screen to build up power 
-              and shoot your puck across the board, aiming to land it in the end zone.
-              Every successful landing leads to a new board appearing at a 90-degree angle. 
-              This game features challenging zones with different obstacles, collectable coins that unlock new player
-              skins and hats, a leaderboard implemented with Playfab, IAP purchases with the App Store, and the ability to 
-              save purchases to an account.
-            </div>
-            <br />
-            <a class="project-link" href="https://apps.apple.com/us/app/shuffle-shot/id1669947421?uo=4&at=11l6hc&app=itunes&ct=fnd" target="_blank">View in App Store</a>
-          </div>
-          
-        </div>
-      </div>
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+    
+	
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-        <div data-aos="fade-right"
-        data-aos-duration="2000">
-          <div class="row mx-1 mx-sm-4">
-            <div class="item-img col-10 col-md-7 col-lg-4 order-2 order-md-1 order-lg-2 d-inline-flex mx-auto">
-                
-                <video controls muted class="active img-fluid portrait">
-                  <source src="imgs/soakpreview.mp4" type="video/mp4" >
-                  Your browser does not support HTML video
-                </video>
-            </div>
-            <div class="item-text col-10 col-md-10 col-lg-6 py-1 mx-auto mb-5 my-sm-auto mt-3 order-2 order-md-2 order-lg-1">
-              <h2 class="project-title">Soak: Sleep & Wakeup to Videos</h2><br />
-              <div class="project-desc">
-                Use YouTube videos as a sleep timer and an alarm clock with Soak, 
-                a project I created over the summer using JavaScript, React-Native, 
-                Google Cloud Platform for API usage, and Firebase for database, cloud functions, 
-                and cloud messaging services.
-              </div>
-              <br />
-              <a class="project-link" href=https://apps.apple.com/app/id1572946421 target="_blank">View in App Store</a>
-            </div>
-            
-          </div>
-        </div>
+    <script src="assets/js/index.js"></script>
 
-
-
-          <div class="container-fluid">
-            <div data-aos="fade-right"
-              data-aos-duration="2000">
-
-              <div class="row mx-1 mx-sm-4">
-                <div class="item-img col-10 col-md-7 col-lg-5 order-1 order-md-1 order-lg-1 d-inline-flex mx-auto">
-                    
-                    <video controls muted class="active img-fluid">
-                      <source src="imgs/char_recog_results.mp4" type="video/mp4" >
-                      Your browser does not support HTML video
-                    </video>
-                </div>
-                <div class="item-text col-10 col-md-10 col-lg-5 py-1 mx-auto mb-5 my-sm-auto mt-3 order-2 order-md-2 order-lg-1">
-                  <h2 class="project-title">Canvas Character Recognition</h2><br />
-                  <div class="project-desc">
-                    A program I made that tracks a color of your choosing, lets you draw 
-                    handwritten letters and numbers, computes what characters you drew using
-                    a Machine Learning algorithm and prints them to the screen.
-                  </div>
-                  <br />
-                  <a class="project-link" href=https://github.com/andrewbespaly/canvas_character_recognition target="_blank">Link to GitHub Repo</a>
-                </div>
-              </div>
-
-            </div>
-
-            <div data-aos="fade-right"
-            data-aos-duration="2000">
-              <div class="row mx-1 mx-sm-4">
-                <div class="item-img col-10 col-md-7 col-lg-4 order-2 order-md-1 order-lg-2 d-inline-flex mx-auto">
-                    
-                    <video controls muted class="active img-fluid">
-                      <source src="imgs/nbadashboard.mp4" type="video/mp4" >
-                      Your browser does not support HTML video
-                    </video>
-                </div>
-                <div class="item-text col-10 col-md-10 col-lg-6 py-1 mx-auto mb-5 my-sm-auto mt-3 order-2 order-md-2 order-lg-1">
-                  <h2 class="project-title">NBA Dashboard</h2><br />
-                  <div class="project-desc">
-                    My classmate and I created a dashboard application for viewing NBA statistics. Compare and contrast all 30 NBA teams with these 
-                    informative graphs that make it way easier to digest the raw numbers that show off a team's skill.
-                  </div>
-                  <br />
-                  <a class="project-link" href=https://github.com/andrewbespaly/NBA_Dashboard target="_blank">Link to GitHub Repo</a>
-                </div>
-                
-              </div>
-            </div>
-
-
-            <div data-aos="fade-right"
-              data-aos-duration="2000">
-              <div class="row mx-1 mx-sm-4">
-
-                <div class="item-img col-10 col-md-7 col-lg-4 order-2 order-md-1 order-lg-2 d-inline-flex mx-auto">
-                    
-                    <video controls muted class="active img-fluid">
-                      <source src="imgs/amusement_park.mp4" type="video/mp4" >
-                      Your browser does not support HTML video
-                    </video>
-                </div>
-
-                <div class="item-text col-10 col-md-10 col-lg-6 py-1 mx-auto mb-5 my-sm-auto mt-3 order-2 order-md-2 order-lg-1">
-                  <h2 class="project-title">Amusement Park using OpenGL</h2><br />
-                  <div class="project-desc">
-                    I created an amusement park model using OpenGL in C++. I implemented texture mapping,
-                    paramatric instancing, object sweeping, first and last cart POV.
-                    This project was build off of skeleton code, it was a final project for a Computer Graphics class. 
-                  </div>
-                  <br />
-                  <a class="project-link" href=https://github.com/andrewbespaly/amusement_park target="_blank">Link to GitHub Repo</a>
-                </div>
-                
-                
-              </div>
-            </div>
-
-    </section>
-
-    <!-- <div class="flex-column">
-      <div class="row d-sm-inline-flex justify-content-center">
-        <a href=https://github.com/andrewbespaly class="font-weight-bold" target="_blank">
-            <img src=imgs/github-logo.png class="git-logo" alt="" />
-          My GitHub
-        </a>
-      </div>
-      <br />
-      <div class="row d-sm-inline-flex justify-content-center email-text">
-        <a id="real_email" href="mailto:andrew.bespaly@gmail.com">andrew.bespaly@gmail.com</a>
-        <button onclick="copyEmail()" class="email-button">
-          <img src=imgs/clip.png alt="" class="clip_img" />
-        </button>
-      </div>
-    </div> -->
-
-    <footer>
-       
-      <p>Website created by: Andrew Bespaly</p>
-      <p>Icons provided by 
-        <a href="https://icons8.com/">icons8</a>
-      </p>
-    </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="index.js"></script>
-  </div>
-  </body>
+</body>
 </html>
